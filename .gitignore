@@ -9,3 +9,5 @@ playwright/.cache/
 *.log
 .DS_Store
 .state/api-key.txt
+.env
+.env.*
