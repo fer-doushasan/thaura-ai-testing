@@ -1,0 +1,26 @@
+[
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/api/auth/me"
+  },
+  {
+    "method": "POST",
+    "url": "https://backend.thaura.ai/api/user/settings/language"
+  },
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/api/bootstrap"
+  },
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/v1/chat/active-turns"
+  },
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/api/plugins/list"
+  },
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/api/user/settings"
+  }
+]

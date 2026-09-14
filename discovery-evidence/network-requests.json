@@ -1,0 +1,602 @@
+[
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/",
+    "resourceType": "document",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/media/017d9bea37084d9b-s.p.41rroleoq1br7.woff2",
+    "resourceType": "font",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1fx9v76rhj42y.css",
+    "resourceType": "stylesheet",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1-g4hqqra-a5c.css",
+    "resourceType": "stylesheet",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0u7dcfe27b4u6.css",
+    "resourceType": "stylesheet",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0zufb3cmjrltr.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0d-lx-ciozcac.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3hjxeh11go9q8.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1dmv1c9xx9bfb.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/turbopack-394kab756xckd.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/43haoxku6b0cm.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0u0j9nzdnzjwx.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1hbk-ktpq43-l.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2fgprn4mld7_n.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3g_op31ep4gxg.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2t8kt38_b0a5s.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0tkgjekk865w5.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/393ynbplxdhnz.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3qxkecc9z3tsp.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0j034b_ttny-c.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1nsfb74niltxn.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/38u8invsyosu8.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/42ot05i59b543.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/135shyjehw2-m.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2cs1cd8n6oxpa.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2tc7c1ppb55k3.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1jwcj8qv3ut1a.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/00wuzntw3vefa.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2xim2sczs1m8z.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/25agu7e06g-0o.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/22f084nkqxjmf.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1mzjsalxcev5g.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/40muyxliwhg9v.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/426hmycjca5sl.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0kb35h4weuey7.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/version.json?t=1789375409140",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/api/auth/me",
+    "resourceType": "fetch",
+    "status": 401
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3kz3t-aw9ayp3.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/168xbkw4m66hy.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3klwssk27tp-z.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3js3yxi4l4y1j.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2lcq9zjwvr5y2.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2v8kjd3b5i95p.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/Black.gif",
+    "resourceType": "image",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/White.gif",
+    "resourceType": "image",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/logo-2.svg",
+    "resourceType": "image",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3sq9vcvdokbfc.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1byeupjo1zltx.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://backend.thaura.ai/api/plugins/list",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/index.txt?_rsc=QLBdCDjfpGkLRHBX",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/home",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/story",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/constitution",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/home/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/story/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/api-platform",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/download",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/pricing",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/faq",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/download/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/contact",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/__next._index.txt?_rsc=yIp22O3xgPPxC28X",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=8nTjltbQWvg6NcbE",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=xa2Be8DtYOzT4P6g",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/contact/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=rIW6aXtZu3VCDtqo",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/constitution/__next.constitution.__PAGE__.txt?_rsc=Sr36iDfvMa2NL8IT",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/17udaciby1wd1.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0g4vjnb8xzm5c.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0omhwp2p22qlp.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/api-platform/__next.api-platform.__PAGE__.txt?_rsc=H-Zw_H9B4w3D6HBY",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/download/__next.download.__PAGE__.txt?_rsc=yj9d-X0w4-THkrSt",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/1t_1rrm08f4jg.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/pricing/__next.pricing.__PAGE__.txt?_rsc=e-TVHDPN8vGDTXUP",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0cascdaq0xz1s.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=KqHaFIspF__AJWnb",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0xhkil2dwrrn5.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/18qm6-zpguget.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/faq/__next.faq.__PAGE__.txt?_rsc=dzIsfw4qQTAENwrl",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/3i2fdovn54-ue.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/contact/__next.contact.__PAGE__.txt?_rsc=BiuOixuigeBXVJn7",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0ljuzbe34sy68.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/2476h8mm61y2w.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/0shtzxbu3fvnh.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/hero.webp",
+    "resourceType": "image",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/privacy-policy",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "HEAD",
+    "url": "https://thaura.ai/terms-of-service",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/privacy-policy/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/terms-of-service/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/privacy-policy/__next.privacy-policy.__PAGE__.txt?_rsc=ey7-AP2i6ZAVOcS_",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/terms-of-service/__next.terms-of-service.__PAGE__.txt?_rsc=-IBoPG-yxYXl251e",
+    "resourceType": "fetch",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/api.webp",
+    "resourceType": "image",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/43tl4nydv446_.js",
+    "resourceType": "script",
+    "status": 200
+  },
+  {
+    "method": "GET",
+    "url": "https://thaura.ai/_next/static/chunks/43_kch2u5296h.js",
+    "resourceType": "script",
+    "status": 200
+  }
+]

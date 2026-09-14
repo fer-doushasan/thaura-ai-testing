@@ -1,0 +1,124 @@
+{
+  "perSample": {
+    "bangla": {
+      "inputLength": 57,
+      "nameFieldRoundTrip": true,
+      "messageFieldRoundTrip": true
+    },
+    "arabic_rtl": {
+      "inputLength": 45,
+      "nameFieldRoundTrip": true,
+      "messageFieldRoundTrip": true
+    },
+    "mixed_bangla_english": {
+      "inputLength": 54,
+      "nameFieldRoundTrip": true,
+      "messageFieldRoundTrip": true
+    },
+    "emoji": {
+      "inputLength": 51,
+      "nameFieldRoundTrip": true,
+      "messageFieldRoundTrip": true
+    },
+    "long_unicode": {
+      "inputLength": 1000,
+      "nameFieldRoundTrip": true,
+      "messageFieldRoundTrip": true
+    },
+    "special_chars": {
+      "inputLength": 32,
+      "nameFieldRoundTrip": true,
+      "messageFieldRoundTrip": true
+    }
+  },
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 ()"
+  ],
+  "failedRequests": [
+    {
+      "url": "https://thaura.ai/",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/home",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/story",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/constitution",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/home/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/story/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/api-platform",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/download",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/pricing",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/faq",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/download/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/contact",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/__next._index.txt?_rsc=60m9ttaXtJHZmEpN",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=00jsNgvC9sZ9uZS6",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/contact/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=dWP4iTI_RaxSHDP5",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/constitution/__next.constitution.__PAGE__.txt?_rsc=zrquJBF1mRWbgb3Q",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/api-platform/__next.api-platform.__PAGE__.txt?_rsc=eGwJwlToU1xnYz0_",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://thaura.ai/download/__next.download.__PAGE__.txt?_rsc=6VB9nfu0H1atxWZz",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "postRequestsFired": []
+}

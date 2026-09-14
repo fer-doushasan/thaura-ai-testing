@@ -1,0 +1,135 @@
+Meet Thaura / Your Ethical AI Companion
+THAURA
+HomeStoryConstitutionAPIDownloadPricingFAQContactTry Thaura
+Meet Thaura, your ethical AI companion
+No ads, no investors, no training on your data. Just an AI that works for you.
+Talk to Thaura
+How You Can Use Thaura
+Documents, research, code, writing, whole projects. See what it actually does, not what it claims.
+Analyzing
+Drop in a document and get answers, charts, and interactive breakdowns in seconds.
+Learning
+Researching
+Coding
+Creating
+Your browser does not support the video tag.
+The difference is who it answers to.
+One of these answers to advertisers. The other answers to you.
+The usual AI
+Trains on your chats by default
+Answers to advertisers
+Filters what you can ask
+Monetizes what it learns about you
+Guzzles energy at scale
+Thaura
+Never trains on you
+Answers to you
+Answers honestly, always
+Makes nothing off your data
+Small, efficient, renewable
+AI That Doesn't Cost the Earth
+The biggest AI models burn staggering amounts of energy, and most of the labs behind them won't even publish their footprint. We built the proof it doesn't have to be this way.
+Light by Design
+One GPU generates your whole reply. Published estimates put typical large-model replies at several times more energy, before reasoning modes multiply it further.
+Heat That Doesn't Go to Waste
+In Finland, data centers warm homes. Our GPU provider feeds server heat into district heating instead of venting it into the sky.
+Clean Power, On the Record
+Our GPUs run in Helsinki on hydro and wind under renewable supply contracts, on a grid that averaged 26 g CO₂ per kWh in 2025 (Fingrid), among the cleanest in the world.
+27BParameters
+~154xLess CO₂ (est.)
+100%Renewable
+“Efficiency isn't just about speed. It's about the planet.”
+We came from a revolution. So we built one.
+Two brothers from Syria who know what it costs when the powerful own the tools. Thaura is us taking them back, for everyone.
+Syrian Engineers
+Two brothers who left Syria before the war. They build for the people Big Tech overlooks.
+Independent by Design
+No investors, no ads, no agenda. Built to answer to the people who use it, not shareholders.
+Power Back to People
+Every line of code is about giving people genuine control over their data and their tools.
+Why We Built Thaura
+“We grew up watching the powerful decide everything: who gets heard, who gets watched, who gets left out. We built Thaura to put that power back where it belongs, with you.”
+Thaura Founders
+All the power. None of the catch.
+It reads whole libraries, sees images, runs code, and remembers what matters. Everything you'd expect from a serious AI, built on ethics we put in writing.
+Thaura Work
+Agentic desktop AI for knowledge work. Hand off research, drafting, data extraction, and file organization. Thaura does the work, not just describes it.
+Projects
+Group chats and source files into one workspace. Custom instructions, shared context. Every conversation inside picks up where the last left off.
+Artifacts
+Interactive pages, games, and documents Thaura builds with you. They keep working after the chat ends, and share as a link whenever you want.
+Privacy-First Web Search
+Real-time web search via Brave: no tracking, no filter bubbles, just truth.
+Never Loses the Thread
+Follows long conversations and big documents, holding on to what matters.
+Sees, Hears, and Reads
+Vision, audio analysis, document processing: it understands any format.
+Works With All Your Files
+PDFs, docs, spreadsheets, code: nearly any file you throw at it.
+Live Code Execution
+Create dashboards, visualizations, games: see your code come alive instantly.
+Voice Mode
+Speak directly to Thaura in 90+ languages instead of typing. Fast, natural, and hands-free.
+Developer API
+OpenAI-compatible API with function calling, structured output, speech-to-text, and full SDK support. Build ethical AI into your applications.
+Incognito Mode
+Chat without saving history. Your conversations disappear when you're done, true privacy when you need it most.
+Plugins & Integrations
+Plug in the tools and data sources you already use, so Thaura works with your world.
+Share Conversations
+Share any conversation via a link. Let others see your discoveries, analyses, and insights with one click.
+Persistent Memory
+Your preferences, context, and knowledge carry across conversations. Every chat picks up where you left off.
+Available Everywhere
+Use Thaura on web, desktop (Mac, Windows, Linux), and mobile (Android). Your ethical AI companion on every device.
+Proof, not promises.
+We don't just claim to be ethical. We prove it: a public constitution, EU servers, and a no-training policy you can hold us to.
+You're Not the Product
+No ads, no trackers, no behavioral profiling. Your attention isn't for sale
+We never sell or share your data, not with advertisers, data brokers, or governments
+We never train our models on your conversations
+No engagement tricks. We never optimize to keep you hooked
+Encrypted in transit (TLS 1.2+) and at rest (AES-256-GCM)
+Data Sovereignty Guaranteed
+All data is stored and processed only on EU servers, under EU jurisdiction
+Built on an open-source model, self-hosted on our own EU GPUs, so no third-party provider ever sits between you and Thaura
+Fully independent, EU-based infrastructure, owned by no one but us
+GDPR-compliant by design, not as an afterthought
+Delete your data permanently and completely, whenever you want
+0%
+Data Sold to Third Parties
+256-bit
+AES-256-GCM Encryption
+EU
+Data Residency, Always
+Small model. Serious results.
+Proof that you don't need a trillion parameters to deliver fast, world-class AI.
+Qwen3.8 Architecture
+Parameters27B
+Energy per 1K Tokens (measured)~0.03 Wh
+Response Time<200ms
+vs. ChatGPT
+ParametersUndisclosed, estimated far larger
+Energy UsageOne blog figure (0.34 Wh), no methodology
+Environmental ReportingNone published (as of 2026)
+The Real Difference
+Our entire model runs on a single GPU. Frontier models run on data centers full of them, and most of the labs behind them publish no environmental data at all. We publish our numbers and our assumptions, and a Thaura reply is estimated to use several times less energy, with none of the drop in quality.
+“Efficiency isn't a compromise. It's a revolution. We're proving that the best AI isn't the biggest, it's the smartest.”
+The people want it back.
+Thaura isn't just an AI company, it's people taking back tools that were never built to serve them. You're one of them now.
+Tech for Palestine Incubator
+Part of a global network building ethical, independent alternatives to surveillance-driven tech.
+Independent AI
+Not a user, not a data point. A person who chose an AI with a conscience, and helped it exist.
+Shaped by You
+Built by two brothers and shaped by the people who use it. No boardroom, no investors, no shareholders steering the direction. Just the people it's for, and their feedback.
+Join Our Discord
+This is where you
+take it back.
+An AI built for people, not the powerful. Yours from the first message.
+Start Using Thaura
+Thaura
+AI that answers to you, never to advertisers or investors. Private by design.
+HomeStoryConstitutionPricingCommunityContactCareersFAQAPIDonateDownloadTerms of ServicePrivacy PolicyDPAImprintThemeLanguage
+© 2026 Thaura AI. All rights reserved.
+Built withfor privacy & ethics

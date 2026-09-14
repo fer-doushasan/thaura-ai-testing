@@ -1,0 +1,38 @@
+[
+  {
+    "messageNumber": 1,
+    "sentAt": "2026-09-14T09:21:37.297Z",
+    "text": "QA quota test message 1 - reply with just OK",
+    "blockedIndicatorSeen": true
+  },
+  {
+    "messageNumber": 2,
+    "sentAt": "2026-09-14T09:21:43.445Z",
+    "text": "QA quota test message 2 - reply with just OK",
+    "blockedIndicatorSeen": true
+  },
+  {
+    "messageNumber": 3,
+    "sentAt": "2026-09-14T09:21:49.546Z",
+    "text": "QA quota test message 3 - reply with just OK",
+    "blockedIndicatorSeen": true
+  },
+  {
+    "messageNumber": 4,
+    "sentAt": "2026-09-14T09:21:55.642Z",
+    "text": "QA quota test message 4 - reply with just OK",
+    "blockedIndicatorSeen": true
+  },
+  {
+    "messageNumber": 5,
+    "sentAt": "2026-09-14T09:22:01.738Z",
+    "text": "QA quota test message 5 - reply with just OK",
+    "blockedIndicatorSeen": true
+  },
+  {
+    "messageNumber": 6,
+    "sentAt": "2026-09-14T09:22:07.828Z",
+    "text": "QA quota test message 6 - reply with just OK",
+    "blockedIndicatorSeen": true
+  }
+]

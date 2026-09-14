@@ -1,0 +1,10 @@
+{
+  "fileName": "sample.pdf",
+  "content": "## Thaura QA Assessment-Test Document\n\n## Verification marker: QA-DOC-MARKER-71934\n\nThis is a deterministic fixture for extraction-accuracy testing.\n\n## Line item total: $4,217.63",
+  "text": "## Thaura QA Assessment-Test Document\n\n## Verification marker: QA-DOC-MARKER-71934\n\nThis is a deterministic fixture for extraction-accuracy testing.\n\n## Line item total: $4,217.63",
+  "fileId": "6cc37fd719b5a2201038615687ff6032",
+  "minioKey": "users/cmu1145wi03oajyr4f0noby2n/1789379491697_ed248d184ff5ef4c725b749d64871207.pdf",
+  "mimeType": "application/pdf",
+  "size": 1523,
+  "saved": true
+}

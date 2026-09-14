@@ -1,0 +1,30 @@
+[
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "name": "name",
+    "placeholder": "Your name",
+    "required": true
+  },
+  {
+    "tag": "INPUT",
+    "type": "email",
+    "name": "email",
+    "placeholder": "your@email.com",
+    "required": true
+  },
+  {
+    "tag": "INPUT",
+    "type": "text",
+    "name": "subject",
+    "placeholder": "What's this about?",
+    "required": false
+  },
+  {
+    "tag": "TEXTAREA",
+    "type": "textarea",
+    "name": "message",
+    "placeholder": "What's on your mind?",
+    "required": true
+  }
+]

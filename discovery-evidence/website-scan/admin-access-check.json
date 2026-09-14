@@ -1,0 +1,10 @@
+{
+  "nonAdminUser": {
+    "finalUrl": "https://thaura.ai/",
+    "textSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHow's it going, Qa Test?\n\nHow can I help you today?\n\nThaura's choice\nWrite\nBuild\nLearn\nSummarize"
+  },
+  "anonymous": {
+    "finalUrl": "https://thaura.ai/",
+    "textSnippet": "THAURA\n\nHome\nStory\nConstitution\nAPI\nDownload\nPricing\nFAQ\nContact\nTry Thaura\nHappy Monday, traveler\n\nHow can I help you today?\n\nThaura's choice\nWrite\nBuild\nLearn\nSummarize"
+  }
+}

@@ -1,0 +1,77 @@
+Thaura
+Beta
+Toggle Sidebar
+New Chat
+⌘+J
+Search
+⌘+K
+Projects
+Artifacts
+Work
+TODAY
+QA quota test
+QT
+Qa Test
+Free Plan
+Incognito mode
+Free Plan -
+Upgrade
+Happy Monday, Qa Test
+
+How can I help you today?
+
+Thaura's choice
+Write
+Build
+Learn
+Summarize
+API
+API Keys
+Billing
+
+Current Balance
+
+$0.00
+
+Pay-As-You-Go Pricing
+
+• $0.50 per million input tokens
+
+• $2.00 per million output tokens
+
+Add Balance
+$10.00
+$25.00
+$50.00
+$100.00
+$250.00
+Add Balance
+
+A fully independent payment stack is coming.
+
+Auto top-up
+
+Automatically add credit when your balance runs low, so your API never stops.
+
+Add a card to enable auto top-up.
+
+Add funds & save card
+Usage by API Key
+
+Thaura API Key 1
+
+$0.00
+
+Requests
+
+0
+
+Tokens
+
+0.0K
+
+Last Used
+
+Sep 14, 2026
+
+Close

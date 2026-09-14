@@ -1,0 +1,144 @@
+[
+  {
+    "key": "valid_pdf",
+    "file": "test-data/valid/sample.pdf",
+    "startedAt": "2026-09-14T09:43:00.282Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nHow can I help you today?\n\n1\nThaura's choice\nWrite\nBuild\nLearn\nSummarize",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n1\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 38m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 200,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:43:14.563Z"
+  },
+  {
+    "key": "valid_xlsx",
+    "file": "test-data/valid/sample.xlsx",
+    "startedAt": "2026-09-14T09:43:14.563Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\n2\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 38m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\n2\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 38m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 200,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:43:43.772Z"
+  },
+  {
+    "key": "valid_png",
+    "file": "test-data/valid/sample.png",
+    "startedAt": "2026-09-14T09:43:43.773Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\n3\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 38m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\n3\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 37m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 200,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:44:13.004Z"
+  },
+  {
+    "key": "empty_pdf",
+    "file": "test-data/invalid/empty.pdf",
+    "startedAt": "2026-09-14T09:44:13.004Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\n4\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 37m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\n4\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 37m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:44:42.210Z"
+  },
+  {
+    "key": "empty_png",
+    "file": "test-data/invalid/empty.png",
+    "startedAt": "2026-09-14T09:44:42.211Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\n5\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 37m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\n5\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 36m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:45:11.441Z"
+  },
+  {
+    "key": "corrupted_pdf",
+    "file": "test-data/invalid/corrupted.pdf",
+    "startedAt": "2026-09-14T09:45:11.442Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\n6\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 36m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\n6\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 36m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 400,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:45:40.695Z"
+  },
+  {
+    "key": "corrupted_png",
+    "file": "test-data/invalid/corrupted.png",
+    "startedAt": "2026-09-14T09:45:40.696Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\n7\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 36m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\n7\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 35m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 200,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:46:09.901Z"
+  },
+  {
+    "key": "password_protected_pdf",
+    "file": "test-data/invalid/password-protected.pdf",
+    "startedAt": "2026-09-14T09:46:09.902Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\nCould not extract text from PDF \"password-protected.pdf\". The file may be corrupted, password-protected, or contain only images.\n8\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 35m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\nCould not extract text from PDF \"password-protected.pdf\". The file may be corrupted, password-protected, or contain only images.\n8\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 35m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 400,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:46:39.099Z"
+  },
+  {
+    "key": "oversized_8mb",
+    "file": "test-data/boundary/oversized_8mb.pdf",
+    "startedAt": "2026-09-14T09:46:39.099Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\nCould not extract text from PDF \"password-protected.pdf\". The file may be corrupted, password-protected, or contain only images.\n\noversized_8mb.pdf\n\nPDF\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 35m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\nCould not extract text from PDF \"password-protected.pdf\". The file may be corrupted, password-protected, or contain only images.\n\noversized_8mb.pdf\n\nPDF\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 34m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:47:17.296Z"
+  },
+  {
+    "key": "oversized_60mb",
+    "file": "test-data/boundary/oversized_60mb.pdf",
+    "startedAt": "2026-09-14T09:47:17.296Z",
+    "bodyTextAfterAttachSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\nCould not extract text from PDF \"password-protected.pdf\". The file may be corrupted, password-protected, or contain only images.\nPDF\nFile size exceeds the 50MB limit.\n10\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 34m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Monday, Qa Test\nPDF\n\nsample.xlsx\n\n5 lines\n\nEXCEL\nCannot upload empty file.\nCannot upload empty file.\nCould not extract text from PDF \"corrupted.pdf\". The file may be corrupted, password-protected, or contain only images.\nCould not extract text from PDF \"password-protected.pdf\". The file may be corrupted, password-protected, or contain only images.\nPDF\nFile size exceeds the 50MB limit.\n10\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nThis is how ethical AI wins.\nOut of messages. Here's the honest ask.\n\nThe big players fund themselves with investor money and your data. We refuse both, so free accounts get 5 messages every 5 hours.\n\nWhy there's a limit\n\nWe're a tiny team: no investors, no ad money\n\nEvery message you send costs us to run, and we pay for it ourselves\n\nWe refuse to sell your data to cover the costs\n\nEvery Pro subscriber keeps ethical AI alive, and free for someone who can't afford it.\n\nFree messages reset in: 4h 33m\n\nUpgrade to Pro\nI'll wait\nClose",
+    "uploadNetworkRequests": [
+      {
+        "url": "https://backend.thaura.ai/api/uploads",
+        "status": 200,
+        "method": "POST"
+      }
+    ],
+    "status": "completed-run",
+    "endedAt": "2026-09-14T09:48:48.529Z"
+  }
+]

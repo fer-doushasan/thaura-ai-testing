@@ -1,0 +1,38 @@
+[
+  {
+    "text": "THAURA",
+    "href": "/"
+  },
+  {
+    "text": "Home",
+    "href": "/home"
+  },
+  {
+    "text": "Story",
+    "href": "/story"
+  },
+  {
+    "text": "Constitution",
+    "href": "/constitution"
+  },
+  {
+    "text": "API",
+    "href": "/api-platform"
+  },
+  {
+    "text": "Download",
+    "href": "/download"
+  },
+  {
+    "text": "Pricing",
+    "href": "/pricing"
+  },
+  {
+    "text": "FAQ",
+    "href": "/faq"
+  },
+  {
+    "text": "Contact",
+    "href": "/contact"
+  }
+]

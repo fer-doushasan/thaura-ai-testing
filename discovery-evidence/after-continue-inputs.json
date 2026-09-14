@@ -1,0 +1,26 @@
+[
+  {
+    "type": "file",
+    "name": "",
+    "placeholder": "",
+    "autocomplete": ""
+  },
+  {
+    "type": "file",
+    "name": "",
+    "placeholder": "",
+    "autocomplete": ""
+  },
+  {
+    "type": "file",
+    "name": "",
+    "placeholder": "",
+    "autocomplete": ""
+  },
+  {
+    "type": "text",
+    "name": "",
+    "placeholder": "Enter your name",
+    "autocomplete": ""
+  }
+]

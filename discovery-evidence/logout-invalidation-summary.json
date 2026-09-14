@@ -1,0 +1,10 @@
+{
+  "preLogout": {
+    "contextA": "checked",
+    "contextB": "checked"
+  },
+  "postLogoutContextA_meStatus": 401,
+  "postLogoutContextA_cookieStillPresentLocally": false,
+  "replayedOldTokenAfterLogout_meStatus": 401,
+  "contextB_afterA_logout_meStatus": 401
+}

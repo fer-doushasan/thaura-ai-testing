@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://backend.thaura.ai/api/files/4c313b0a6445c6a8a1d2d5732099b68b",
+    "authFetchStatus": 404,
+    "unauthFetchStatus": 401
+  },
+  {
+    "url": "https://backend.thaura.ai/api/uploads/4c313b0a6445c6a8a1d2d5732099b68b",
+    "authFetchStatus": 404,
+    "unauthFetchStatus": 401
+  },
+  {
+    "url": "https://backend.thaura.ai/api/user/files/4c313b0a6445c6a8a1d2d5732099b68b",
+    "authFetchStatus": 404,
+    "unauthFetchStatus": 401
+  }
+]

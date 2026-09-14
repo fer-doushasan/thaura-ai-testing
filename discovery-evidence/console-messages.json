@@ -1,0 +1,10 @@
+[
+  {
+    "type": "log",
+    "text": "%c\n\n████████╗██╗  ██╗ █████╗ ██╗   ██╗██████╗  █████╗\n╚══██╔══╝██║  ██║██╔══██╗██║   ██║██╔══██╗██╔══██╗\n   ██║   ███████║███████║██║   ██║██████╔╝███████║\n   ██║   ██╔══██║██╔══██║██║   ██║██╔══██╗██╔══██║\n   ██║   ██║  ██║██║  ██║╚██████╔╝██║  ██║██║  ██║\n   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝\n\nIf you're interested in building ethical AI, join us at discord.gg/bYzxURKVQa\n color: #047857; font-family: monospace;"
+  },
+  {
+    "type": "error",
+    "text": "Failed to load resource: the server responded with a status of 401 ()"
+  }
+]

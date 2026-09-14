@@ -1,0 +1,17 @@
+[
+  {
+    "ariaLabel": "Options",
+    "title": null,
+    "html": "<button data-sidebar=\"menu-action\" class=\"absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-xl p-0 text-secondary ou"
+  },
+  {
+    "ariaLabel": "Upload file",
+    "title": null,
+    "html": "<button class=\"gap-2 whitespace-nowrap text-base font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ri"
+  },
+  {
+    "ariaLabel": "Start recording",
+    "title": null,
+    "html": "<button class=\"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl text-base transition-colors focus-visible:outline-none focus"
+  }
+]

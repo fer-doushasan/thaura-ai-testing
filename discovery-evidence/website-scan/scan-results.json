@@ -1,0 +1,2019 @@
+[
+  {
+    "path": "/",
+    "url": "https://thaura.ai/",
+    "finalUrl": "https://thaura.ai/",
+    "status": 200,
+    "redirected": false,
+    "title": "Thaura",
+    "metaDescription": "Your ethical AI companion. It answers to you, never to advertisers or investors. Private by design and built in Europe.",
+    "canonical": "https://thaura.ai/home",
+    "ogTitle": "Thaura / Your Ethical AI Companion",
+    "ogDescription": "No ads, no investors, no training on your data. Just an AI that works for you.",
+    "ogImage": "https://thaura.ai/og-home.png",
+    "ogUrl": "https://thaura.ai",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Thaura / Your Ethical AI Companion",
+    "twitterDescription": "No ads, no investors, no training on your data. Just an AI that works for you.",
+    "twitterImage": "https://thaura.ai/og-home.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=5CB68i4pnAekjehf",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=8nTjltbQWvg6NcbE",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=rIW6aXtZu3VCDtqo",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next.constitution.__PAGE__.txt?_rsc=Sr36iDfvMa2NL8IT",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next.api-platform.__PAGE__.txt?_rsc=H-Zw_H9B4w3D6HBY",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next.pricing.__PAGE__.txt?_rsc=e-TVHDPN8vGDTXUP",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=KqHaFIspF__AJWnb",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact/__next.contact.__PAGE__.txt?_rsc=BiuOixuigeBXVJn7",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 90
+  },
+  {
+    "path": "/home",
+    "url": "https://thaura.ai/home",
+    "finalUrl": "https://thaura.ai/home",
+    "status": 200,
+    "redirected": false,
+    "title": "Meet Thaura / Your Ethical AI Companion",
+    "metaDescription": "It answers to you, never to advertisers or investors. Private by design, built in Europe, born from a revolution.",
+    "canonical": "https://thaura.ai/home",
+    "ogTitle": "Meet Thaura / Your Ethical AI Companion",
+    "ogDescription": "It answers to you, never to advertisers or investors. Private by design, built in Europe, born from a revolution.",
+    "ogImage": "https://thaura.ai/og-home.png",
+    "ogUrl": "https://thaura.ai/home",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Meet Thaura / Your Ethical AI Companion",
+    "twitterDescription": "It answers to you, never to advertisers or investors. Private by design, built in Europe, born from a revolution.",
+    "twitterImage": "https://thaura.ai/og-home.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=f9CEIYu9QTK0sWpu",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=f9CEIYu9QTK0sWpu",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=f9CEIYu9QTK0sWpu",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=0qQsNmmrnNkhGoYJ",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next.download.__PAGE__.txt?_rsc=zy5Mt0PNJ9cyyxCd",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=MEGA5Pjwaq-6OwRo",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.__PAGE__.txt?_rsc=aRrc7WmfOMf0Yd92",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 85
+  },
+  {
+    "path": "/story",
+    "url": "https://thaura.ai/story",
+    "finalUrl": "https://thaura.ai/story",
+    "status": 200,
+    "redirected": false,
+    "title": "Our Story / Meet the Founders of Thaura",
+    "metaDescription": "Hani and Said Chihabi, two Syrian brothers who saw the powerful own the tools that shape our lives. So they built Thaura, your ethical AI companion.",
+    "canonical": "https://thaura.ai/story",
+    "ogTitle": "Our Story / Meet the Founders of Thaura",
+    "ogDescription": "Hani and Said Chihabi, two Syrian brothers who saw the powerful own the tools that shape our lives. So they built Thaura, your ethical AI companion.",
+    "ogImage": "https://thaura.ai/og-story.png",
+    "ogUrl": "https://thaura.ai/story",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Our Story / Meet the Founders of Thaura",
+    "twitterDescription": "Hani and Said Chihabi, two Syrian brothers who saw the powerful own the tools that shape our lives. So they built Thaura, your ethical AI companion.",
+    "twitterImage": "https://thaura.ai/og-story.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=wv5g4qtC1OYfh5vf",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=wv5g4qtC1OYfh5vf",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=wv5g4qtC1OYfh5vf",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=CDYQ0EDPganJYjWL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=QWByq6YezY1O2Dhg",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=QggxtSpdG2OkeKJM",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 87
+  },
+  {
+    "path": "/constitution",
+    "url": "https://thaura.ai/constitution",
+    "finalUrl": "https://thaura.ai/constitution",
+    "status": 200,
+    "redirected": false,
+    "title": "Constitution / Thaura",
+    "metaDescription": "15 articles. Binding commitments to privacy, transparency, and human dignity. If we ever betray these values, we give you permission to abandon us.",
+    "canonical": "https://thaura.ai/constitution",
+    "ogTitle": "Constitution / Thaura",
+    "ogDescription": "15 articles. Binding commitments to privacy, transparency, and human dignity.",
+    "ogImage": "https://thaura.ai/og-constitution.png",
+    "ogUrl": "https://thaura.ai/constitution",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Constitution / Thaura",
+    "twitterDescription": "15 articles. Binding commitments to privacy, transparency, and human dignity.",
+    "twitterImage": "https://thaura.ai/og-constitution.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/contact",
+      "https://discord.gg/bYzxURKVQa",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=gZZha6Zdtoh-YHcn",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=gZZha6Zdtoh-YHcn",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=gZZha6Zdtoh-YHcn",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=gZZha6Zdtoh-YHcn",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=ZoWphmskWP9f7_-4",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=2AH6qa0cIp8t3CXQ",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=Svru5uqV8yzLpkfl",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=wCDM3J7nBxSGCRXC",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/api-platform",
+    "url": "https://thaura.ai/api-platform",
+    "finalUrl": "https://thaura.ai/api-platform",
+    "status": 200,
+    "redirected": false,
+    "title": "API Documentation / Thaura",
+    "metaDescription": "Build with AI that refuses to be weaponized. Thaura's OpenAI-compatible API: chat, vision, document parsing, speech-to-text, function calling. Ethics, not extraction.",
+    "canonical": "https://thaura.ai/api-platform",
+    "ogTitle": "API Documentation / Thaura",
+    "ogDescription": "AI that refuses to be weaponized. OpenAI-compatible API: chat, vision, document parsing, speech-to-text, function calling. Ethics, not extraction.",
+    "ogImage": "https://thaura.ai/og-api.png",
+    "ogUrl": "https://thaura.ai/api-platform",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "API Documentation / Thaura",
+    "twitterDescription": "AI that refuses to be weaponized. OpenAI-compatible API: chat, vision, document parsing, speech-to-text, function calling. Ethics, not extraction.",
+    "twitterImage": "https://thaura.ai/og-api.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=G5E3Mycm6nqmPgQG",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/download",
+    "url": "https://thaura.ai/download",
+    "finalUrl": "https://thaura.ai/download",
+    "status": 200,
+    "redirected": false,
+    "title": "Download Thaura / Mac, Windows, Linux & Android",
+    "metaDescription": "Download Thaura for Mac, Windows, Linux, and Android. Ethical AI on every device. No ads. No surveillance. No training on your data.",
+    "canonical": "https://thaura.ai/download",
+    "ogTitle": "Download Thaura / Mac, Windows, Linux & Android",
+    "ogDescription": "Thaura for Mac, Windows, Linux, and Android. No ads. No surveillance. No training on your data.",
+    "ogImage": "https://thaura.ai/og-download.png",
+    "ogUrl": "https://thaura.ai/download",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Download Thaura / Mac, Windows, Linux & Android",
+    "twitterDescription": "Thaura for Mac, Windows, Linux, and Android. No ads. No surveillance. No training on your data.",
+    "twitterImage": "https://thaura.ai/og-download.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "https://thaura.ai/downloads/Thaura-latest.dmg",
+      "https://thaura.ai/downloads/Thaura-latest.exe",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=RXdgshqnBKBILSDV",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=RXdgshqnBKBILSDV",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/pricing",
+    "url": "https://thaura.ai/pricing",
+    "finalUrl": "https://thaura.ai/pricing",
+    "status": 200,
+    "redirected": false,
+    "title": "Thaura Pricing / Choose Your Ethical AI",
+    "metaDescription": "Priced for people, not profit. Pro is how ethical AI stays independent and free for everyone else. No ads, no investors, never trained on your data.",
+    "canonical": "https://thaura.ai/pricing",
+    "ogTitle": "Thaura Pricing / Choose Your Ethical AI",
+    "ogDescription": "Priced for people, not profit. Pro keeps ethical AI independent and free for everyone. No ads, no investors, never trained on your data.",
+    "ogImage": "https://thaura.ai/og-plans.png",
+    "ogUrl": "https://thaura.ai/pricing",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Thaura Pricing / Choose Your Ethical AI",
+    "twitterDescription": "Priced for people, not profit. Pro keeps ethical AI independent and free for everyone. No ads, no investors, never trained on your data.",
+    "twitterImage": "https://thaura.ai/og-plans.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=bME4Q4px3YJ1rAzL",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=1PwMq40tQmr382p8",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=T-esOZ6S4W9VkDkp",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/faq",
+    "url": "https://thaura.ai/faq",
+    "finalUrl": "https://thaura.ai/faq",
+    "status": 200,
+    "redirected": false,
+    "title": "FAQ / Thaura",
+    "metaDescription": "Direct answers about Thaura: privacy, training, security, pricing, GDPR, open source, and what makes ethical AI actually ethical.",
+    "canonical": "https://thaura.ai/faq",
+    "ogTitle": "FAQ / Thaura",
+    "ogDescription": "Direct answers about Thaura: privacy, training, security, pricing, GDPR, open source, and what makes ethical AI actually ethical.",
+    "ogImage": "https://thaura.ai/og-faq.png",
+    "ogUrl": "https://thaura.ai/faq",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "FAQ / Thaura",
+    "twitterDescription": "Direct answers about Thaura: privacy, training, security, pricing, GDPR, open source, and what makes ethical AI actually ethical.",
+    "twitterImage": "https://thaura.ai/og-faq.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=QgfnF85fYcrwyI4V",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=-lVYrbYP5OcplZJR",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=S8RidHUbY1vV3iyD",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=49wuVa7iZ76MgRic",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.__PAGE__.txt?_rsc=HOKo0WFtHgczF3gl",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/contact",
+    "url": "https://thaura.ai/contact",
+    "finalUrl": "https://thaura.ai/contact",
+    "status": 200,
+    "redirected": false,
+    "title": "Contact Thaura / Get in Touch",
+    "metaDescription": "Talk to Thaura. Partnerships, press, government, or just questions. We're building ethical, independent AI and we want to hear from you.",
+    "canonical": "https://thaura.ai/contact",
+    "ogTitle": "Contact Thaura / Get in Touch",
+    "ogDescription": "Partnerships, press, government, or just questions. We're building ethical, independent AI and we want to hear from you.",
+    "ogImage": "https://thaura.ai/og-contact.png",
+    "ogUrl": "https://thaura.ai/contact",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Contact Thaura / Get in Touch",
+    "twitterDescription": "Partnerships, press, government, or just questions. We're building ethical, independent AI and we want to hear from you.",
+    "twitterImage": "https://thaura.ai/og-contact.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=h2vb-LAkAGynSY5z",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=60m9ttaXtJHZmEpN",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=00jsNgvC9sZ9uZS6",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/careers",
+    "url": "https://thaura.ai/careers",
+    "finalUrl": "https://thaura.ai/careers",
+    "status": 200,
+    "redirected": false,
+    "title": "Careers at Thaura / Work on Ethical AI",
+    "metaDescription": "Join a small independent team building AI that answers to its users, not to advertisers. Two remote roles open: Marketing Lead and Operations Manager.",
+    "canonical": "https://thaura.ai/careers",
+    "ogTitle": "Careers at Thaura / Work on Ethical AI",
+    "ogDescription": "Two remote roles open at Thaura: Marketing Lead and Operations Manager. Independent, privacy-first AI, no investors setting the roadmap.",
+    "ogImage": "https://thaura.ai/og-careers.png",
+    "ogUrl": "https://thaura.ai/careers",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Careers at Thaura / Work on Ethical AI",
+    "twitterDescription": "Two remote roles open at Thaura: Marketing Lead and Operations Manager. Independent, privacy-first AI, no investors setting the roadmap.",
+    "twitterImage": "https://thaura.ai/og-careers.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "mailto:info@thaura.ai?subject=Careers%20at%20Thaura",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._tree.txt?_rsc=aDWKJYaihTyktDPw",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=aDWKJYaihTyktDPw",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=aDWKJYaihTyktDPw",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=aDWKJYaihTyktDPw",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=aDWKJYaihTyktDPw",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=DyOjAYMvxIjWriex",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=sDze00BjfS4hK9o0",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=1B8N7xuTDcL-bOjd",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next.download.__PAGE__.txt?_rsc=AKBLCF6jqjsqi1sO",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next.pricing.__PAGE__.txt?_rsc=EynWE6BzqZzqXOw5",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=oXT7ksSGn355uBE_",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 84
+  },
+  {
+    "path": "/community",
+    "url": "https://thaura.ai/community",
+    "finalUrl": "https://thaura.ai/community",
+    "status": 200,
+    "redirected": false,
+    "title": "Community / Join Us / Thaura",
+    "metaDescription": "Join us on Discord. Builders, researchers, and people who care about ethical AI, shaping Thaura together. Accountable to you, not investors.",
+    "canonical": "https://thaura.ai/community",
+    "ogTitle": "Community / Join Us / Thaura",
+    "ogDescription": "Join us on Discord. Builders, researchers, and people who care about ethical AI, shaping Thaura together. Accountable to you, not investors.",
+    "ogImage": "https://thaura.ai/og-community.png",
+    "ogUrl": "https://thaura.ai/community",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Community / Join Us / Thaura",
+    "twitterDescription": "Join us on Discord. Builders, researchers, and people who care about ethical AI, shaping Thaura together. Accountable to you, not investors.",
+    "twitterImage": "https://thaura.ai/og-community.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "https://discord.gg/bYzxURKVQa",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=jjXSXGeZZAcCovAK",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=jjXSXGeZZAcCovAK",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=jjXSXGeZZAcCovAK",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=ZtJH5t_TrmfJ0qBi",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=H671QdH2zMpBDGRE",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next.api-platform.__PAGE__.txt?_rsc=J1asb-RMjxVnJqwI",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 85
+  },
+  {
+    "path": "/donate",
+    "url": "https://thaura.ai/donate",
+    "finalUrl": "https://thaura.ai/donate",
+    "status": 200,
+    "redirected": false,
+    "title": "Support Thaura / Fund Ethical AI",
+    "metaDescription": "Keep the people's AI free. No investors, no ads, no strings, just people funding ethical AI so it answers to them, not profit.",
+    "canonical": "https://thaura.ai/donate",
+    "ogTitle": "Support Thaura / Fund Ethical AI",
+    "ogDescription": "Keep the people's AI free. No investors, no ads. Your donation keeps ethical AI answering to people, not profit.",
+    "ogImage": "https://thaura.ai/og-donate.png",
+    "ogUrl": "https://thaura.ai/donate",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Support Thaura / Fund Ethical AI",
+    "twitterDescription": "Keep the people's AI free. No investors, no ads. Your donation keeps ethical AI answering to people, not profit.",
+    "twitterImage": "https://thaura.ai/og-donate.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=QGx4VBe8FLdZ-EXo",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=7fIgFC1mACt_X799",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=DKvmV1frZvO50US1",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact/__next._tree.txt?_rsc=5qh8PtnC89rUNeiA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next.constitution.__PAGE__.txt?_rsc=Fi4bh_a-IryroKLa",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next.download.__PAGE__.txt?_rsc=WjJwAmewF48uwJiI",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next.pricing.__PAGE__.txt?_rsc=3zAMbt7NK1xLF17n",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 84
+  },
+  {
+    "path": "/privacy-policy",
+    "url": "https://thaura.ai/privacy-policy",
+    "finalUrl": "https://thaura.ai/privacy-policy",
+    "status": 200,
+    "redirected": false,
+    "title": "Privacy Policy / Thaura",
+    "metaDescription": "Privacy is a human right. Thaura’s policy: AES-256 encryption, EU servers, GDPR by design. We never train on your data. We never sell to third parties.",
+    "canonical": "https://thaura.ai/privacy-policy",
+    "ogTitle": "Privacy Policy / Thaura",
+    "ogDescription": "Privacy is a human right. AES-256, EU servers, GDPR by design. We never train on your data. We never sell to third parties.",
+    "ogImage": "https://thaura.ai/og-privacy.png",
+    "ogUrl": "https://thaura.ai/privacy-policy",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Privacy Policy / Thaura",
+    "twitterDescription": "Privacy is a human right. AES-256, EU servers, GDPR by design. We never train on your data. We never sell to third parties.",
+    "twitterImage": "https://thaura.ai/og-privacy.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=eamlP76RN16LYXsq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=eamlP76RN16LYXsq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=eamlP76RN16LYXsq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=eamlP76RN16LYXsq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=eamlP76RN16LYXsq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=U8t3uXqJAvBjR3ok",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next.home.__PAGE__.txt?_rsc=-HNyRG6D2Pj4mT80",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=Onmg8yHKeHfe4Z6J",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next.pricing.__PAGE__.txt?_rsc=4ZztWapIlbbqmKLA",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact/__next.contact.__PAGE__.txt?_rsc=bc22310FJ30LjWJc",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/terms-of-service",
+    "url": "https://thaura.ai/terms-of-service",
+    "finalUrl": "https://thaura.ai/terms-of-service",
+    "status": 200,
+    "redirected": false,
+    "title": "Terms of Service / Thaura",
+    "metaDescription": "Thaura’s terms of service. Understand your rights and our commitments to ethical AI and data sovereignty.",
+    "canonical": "https://thaura.ai/terms-of-service",
+    "ogTitle": "Terms of Service / Thaura",
+    "ogDescription": "Understand your rights and our commitments to ethical AI and data sovereignty.",
+    "ogImage": "https://thaura.ai/og-terms.png",
+    "ogUrl": "https://thaura.ai/terms-of-service",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Terms of Service / Thaura",
+    "twitterDescription": "Understand your rights and our commitments to ethical AI and data sovereignty.",
+    "twitterImage": "https://thaura.ai/og-terms.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._tree.txt?_rsc=5SaqTH02cCHPvWkO",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=5SaqTH02cCHPvWkO",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=5SaqTH02cCHPvWkO",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=5SaqTH02cCHPvWkO",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=xJUQl7Mto1XtxIDm",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next.__PAGE__.txt?_rsc=ll2dnHCxu0RpbLr-",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=zrFSvF4-7isLU0ja",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/data-processing-addendum",
+    "url": "https://thaura.ai/data-processing-addendum",
+    "finalUrl": "https://thaura.ai/data-processing-addendum",
+    "status": 200,
+    "redirected": false,
+    "title": "Data Processing Agreement (AVV) / Thaura",
+    "metaDescription": "Thaura’s Data Processing Agreement under Art. 28 GDPR: sub-processor list, technical and organisational measures, and special category data addendum.",
+    "canonical": "https://thaura.ai/data-processing-addendum",
+    "ogTitle": "Data Processing Agreement (AVV) / Thaura",
+    "ogDescription": "Thaura Data Processing Agreement under Art. 28 GDPR. Sub-processors, TOMs, and Art. 9 addendum.",
+    "ogImage": "https://thaura.ai/og-terms.png",
+    "ogUrl": "https://thaura.ai/data-processing-addendum",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Data Processing Agreement (AVV) / Thaura",
+    "twitterDescription": "Thaura Data Processing Agreement under Art. 28 GDPR. Sub-processors, TOMs, and Art. 9 addendum.",
+    "twitterImage": "https://thaura.ai/og-terms.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next._tree.txt?_rsc=vtD7mynVfBndreLC",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=Dgll2rLK0Q3C_CCj",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next.story.__PAGE__.txt?_rsc=IpnYB9pzSQ4bGEss",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next.constitution.__PAGE__.txt?_rsc=bCfS2pPsq3LnDrqZ",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  },
+  {
+    "path": "/imprint",
+    "url": "https://thaura.ai/imprint",
+    "finalUrl": "https://thaura.ai/imprint",
+    "status": 200,
+    "redirected": false,
+    "title": "Imprint / Thaura",
+    "metaDescription": "Legal information and provider identification for Thaura GbR: who operates the service, how to reach us, and the disclosures required by law.",
+    "canonical": "https://thaura.ai/imprint",
+    "ogTitle": "Imprint / Thaura",
+    "ogDescription": "Legal information and provider identification for Thaura GbR: who operates the service, how to reach us, and the disclosures required by law.",
+    "ogImage": "https://thaura.ai/og-imprint.png",
+    "ogUrl": "https://thaura.ai/imprint",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Imprint / Thaura",
+    "twitterDescription": "Legal information and provider identification for Thaura GbR: who operates the service, how to reach us, and the disclosures required by law.",
+    "twitterImage": "https://thaura.ai/og-imprint.png",
+    "links": [
+      "/",
+      "/home",
+      "/story",
+      "/constitution",
+      "/api-platform",
+      "/download",
+      "/pricing",
+      "/faq",
+      "/contact",
+      "/home",
+      "/story",
+      "/constitution",
+      "/pricing",
+      "/community",
+      "/contact",
+      "/careers",
+      "/faq",
+      "/api-platform",
+      "/donate",
+      "/download",
+      "/terms-of-service",
+      "/privacy-policy",
+      "/data-processing-addendum",
+      "/imprint"
+    ],
+    "httpResources": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 401 ()"
+    ],
+    "failedRequests": [
+      {
+        "url": "https://thaura.ai/",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/home",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/story/__next._tree.txt?_rsc=Q0fmf7JZ74oh4mDG",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next._tree.txt?_rsc=Q0fmf7JZ74oh4mDG",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/download",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/pricing",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/__next._index.txt?_rsc=shjIarnLM-txuofh",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/contact",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/constitution/__next.constitution.__PAGE__.txt?_rsc=4y7yH_RQXkAwClM6",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/api-platform/__next.api-platform.__PAGE__.txt?_rsc=xSpfrKdUobbjIwcp",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.txt?_rsc=vWlJ0zEc8J4Fmjfl",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://thaura.ai/faq/__next.faq.__PAGE__.txt?_rsc=9ykUDBPVVccJEHDe",
+        "failure": "net::ERR_ABORTED"
+      }
+    ],
+    "subresourceErrorStatuses": [
+      {
+        "url": "https://backend.thaura.ai/api/auth/me",
+        "status": 401
+      }
+    ],
+    "totalRequests": 83
+  }
+]

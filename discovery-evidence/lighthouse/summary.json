@@ -1,0 +1,58 @@
+{
+  "home": {
+    "url": "https://thaura.ai/home",
+    "performance": 0.73,
+    "accessibility": 1,
+    "bestPractices": 0.96,
+    "seo": 1,
+    "LCP": "5.7 s",
+    "CLS": "0",
+    "TBT": "230 ms",
+    "TTFB": "Root document took 330 ms",
+    "speedIndex": "3.7 s",
+    "totalByteWeight": "Total size was 1,794 KiB",
+    "requestCount": 52
+  },
+  "pricing": {
+    "url": "https://thaura.ai/pricing",
+    "performance": 0.82,
+    "accessibility": 1,
+    "bestPractices": 0.96,
+    "seo": 1,
+    "LCP": "4.6 s",
+    "CLS": "0",
+    "TBT": "140 ms",
+    "TTFB": "Root document took 170 ms",
+    "speedIndex": "3.1 s",
+    "totalByteWeight": "Total size was 890 KiB",
+    "requestCount": 51
+  },
+  "api": {
+    "url": "https://thaura.ai/api-platform",
+    "performance": 0.82,
+    "accessibility": 1,
+    "bestPractices": 0.96,
+    "seo": 1,
+    "LCP": "4.5 s",
+    "CLS": "0",
+    "TBT": "150 ms",
+    "TTFB": "Root document took 160 ms",
+    "speedIndex": "2.9 s",
+    "totalByteWeight": "Total size was 876 KiB",
+    "requestCount": 51
+  },
+  "faq": {
+    "url": "https://thaura.ai/faq",
+    "performance": 0.72,
+    "accessibility": 1,
+    "bestPractices": 0.96,
+    "seo": 1,
+    "LCP": "6.2 s",
+    "CLS": "0",
+    "TBT": "160 ms",
+    "TTFB": "Root document took 160 ms",
+    "speedIndex": "4.7 s",
+    "totalByteWeight": "Total size was 907 KiB",
+    "requestCount": 50
+  }
+}

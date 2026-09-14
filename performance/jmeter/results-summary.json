@@ -1,0 +1,31 @@
+{
+  "testName": "Conservative Baseline Load Test",
+  "note": "This is a light baseline check, NOT a production-capacity or stress test.",
+  "executedAtUTC": "2026-09-14T10:49:38Z",
+  "parameters": {
+    "targets": ["GET /home", "GET /pricing", "GET /faq"],
+    "concurrentUsers": 5,
+    "rampUpSeconds": 30,
+    "loopsPerUser": 3,
+    "thinkTimeMs": "2000-5000 (uniform random)",
+    "scope": "Public static pages only - no backend.thaura.ai, no /v1/chat/completions, no authenticated or billing endpoints"
+  },
+  "overall": {
+    "totalRequests": 45,
+    "errors": 0,
+    "errorRatePercent": 0.0,
+    "testDurationSeconds": 63.0,
+    "throughputReqPerSec": 0.714,
+    "avgResponseTimeMs": 1035.7,
+    "medianResponseTimeMs": 1051,
+    "p95ResponseTimeMs": 1191.6,
+    "minResponseTimeMs": 803,
+    "maxResponseTimeMs": 1253
+  },
+  "byEndpoint": {
+    "GET /home":    { "n": 15, "avgMs": 1113.7, "medianMs": 1127, "p95Ms": 1228.5, "minMs": 988, "maxMs": 1253 },
+    "GET /pricing": { "n": 15, "avgMs": 899.3,  "medianMs": 912,  "p95Ms": 974.8,  "minMs": 803, "maxMs": 979  },
+    "GET /faq":     { "n": 15, "avgMs": 1093.9, "medianMs": 1104, "p95Ms": 1170.4, "minMs": 986, "maxMs": 1176 }
+  },
+  "rawResultsFile": "results.jtl"
+}

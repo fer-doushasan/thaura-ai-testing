@@ -1,0 +1,13 @@
+[
+  {
+    "name": "thaura_token",
+    "domain": ".thaura.ai",
+    "path": "/",
+    "expires": 1820913420.434154,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax",
+    "valueLength": 252,
+    "value": "<REDACTED>"
+  }
+]

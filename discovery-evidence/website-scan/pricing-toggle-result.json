@@ -1,0 +1,22 @@
+{
+  "defaultPriceLines": [
+    "Monthly",
+    "Save 20%",
+    "$0/month",
+    "$12/month",
+    "Billed $144/year"
+  ],
+  "monthlyPriceLines": [
+    "Monthly",
+    "Save 20%",
+    "$0/month",
+    "$15/month"
+  ],
+  "annualPriceLines": [
+    "Monthly",
+    "Save 20%",
+    "$0/month",
+    "$12/month",
+    "Billed $144/year"
+  ]
+}

@@ -1,0 +1,50 @@
+Privacy Policy / Thaura
+THAURA
+HomeStoryConstitutionAPIDownloadPricingFAQContactTry Thaura
+Thaura Privacy Policy
+1. Preamble
+Thaura GbR ("we", "us", or "Thaura") commits to protecting your privacy in accordance with:
+General Data Protection Regulation (GDPR) 2016/679
+German Federal Data Protection Act (BDSG)
+Principles of the Thaura Constitution
+2. Core Product Data Processing
+2.1 Fundamental Principles
+Strong Encryption Architecture: Conversations encrypted at rest with AES-256-GCM; TLS 1.2+ in transit.
+No Sharing: Chat content is never shared with advertisers, analytics services, or external training providers.
+No Training with User Data: Your interactions are never used for model improvement.
+No Surveillance Cooperation: We do not cooperate with government surveillance programs or mass data requests.
+Locality: All servers are located in the EU, in data centers powered by renewable energy under their operators' supply contracts.
+2.2 Collected Data
+Data CategoryPurposeRetention Period
+Account Data (Email)AuthenticationUntil account deletion
+Project Data (User uploads)Context for your queriesAccording to your settings
+Metadata (IP, Device type)Security & Compliance30 days
+3. Special Features
+3.1 Artifacts
+Generated content is provided exclusively to you
+No reuse by Thaura without explicit consent
+4. Your Rights (GDPR Compliance)
+Access: Full disclosure of all stored data
+Rectification: We correct inaccurate data without undue delay
+Erasure: We delete your data on request (live data within 30 days, encrypted backups within 90 days)
+Portability: Request a machine-readable export (JSON, Markdown) of your personal data by emailing info@thaura.ai
+5. Third Parties & Subprocessors
+We only work with partners who:
+Comply with EU data protection standards
+Transfer data outside the EU only under approved safeguards (SCCs)
+Are contractually obligated to deletion
+Current list (2026):
+Hetzner (Backend hosting, Nuremberg, Germany)
+Scaleway (Whisper transcription & embeddings, Paris, France)
+Verda Cloud Oy (self-hosted AI inference, Helsinki, Finland)
+Stripe (Payments)
+Resend (Transactional email, EU, Ireland)
+Web search is powered by Brave Search, which receives search queries but no account-identifying data. Brave is not a sub-processor.
+6. Contact
+Data Protection Contact:Thaura GbRinfo@thaura.aiFortunastr. 23 A, 30451 Hannover, Germany
+Policy changes are communicated 30 days before taking effect.
+Thaura
+AI that answers to you, never to advertisers or investors. Private by design.
+HomeStoryConstitutionPricingCommunityContactCareersFAQAPIDonateDownloadTerms of ServicePrivacy PolicyDPAImprintThemeLanguage
+© 2026 Thaura AI. All rights reserved.
+Built withfor privacy & ethics

@@ -1,0 +1,34 @@
+Our Story / Meet the Founders of Thaura
+THAURA
+HomeStoryConstitutionAPIDownloadPricingFAQContactTry Thaura
+Two brothers from Syria.
+Your ethical AI companion. Born from a revolution, not a boardroom.
+Our Story
+2011
+2011They left Syria for Germany in 2011, just before the war. They were grateful for the safety they found, and never free of the guilt that came with it: building futures abroad while home was being torn apart.
+2022
+2022They built successful careers in Germany's tech industry, working for a company they genuinely loved. Yet they grew increasingly uncomfortable that many of their clients were tied to the harm being done in their homeland. This created a painful contradiction: they were working against their own people.
+December 2024
+December 2024Then the dictatorship fell. A moment they never thought they'd live to see.
+As Syria began to rebuild and called its people home, they couldn't sit still. So they quit their jobs.
+Only then did they look hard at the tech everyone relies on, and ask a simple question: what can we actually build? What they found unsettled them. The tools people trusted, the free ones especially, were quietly working against the people using them.
+They found alternatives for most things: Signal instead of WhatsApp, Brave instead of Google. But for AI? Nothing. And that was the frightening part. AI burns staggering amounts of energy, nearly everyone already leans on it, and it's fast becoming the ground everything else is built on.
+There was a way, if you were technical: self-host an open-source model. But that was never going to work for someone like their auntie.
+Building Thaura
+Building ThauraSo they built a rough first version that could hold a conversation, and handed it to her.
+“Sometimes I don't want to type. I'd rather just talk.”
+So they added voice. Then she asked about images, so they added that too.
+Every request she made, they built. Piece by piece, Thaura became the AI real people actually needed, because a real person was shaping it.
+Finding Their Tribe
+Finding Their TribeFor a long time it was just them: building something they believed in, with no audience, no validation, nothing but the conviction that it mattered and the honest feedback of family and friends.
+Then they found Tech for Palestine, an incubator for mission-driven startups. People building for the same reasons they were.
+For the first time, they saw they weren't the only ones who believed technology should answer to people.
+Today, Thaura is that alternative: independent, answering only to the people who use it, and just getting started.
+This is where you come in.
+Try an AI that answers to you, and become part of what we're building.
+Try Thaura
+Thaura
+AI that answers to you, never to advertisers or investors. Private by design.
+HomeStoryConstitutionPricingCommunityContactCareersFAQAPIDonateDownloadTerms of ServicePrivacy PolicyDPAImprintThemeLanguage
+© 2026 Thaura AI. All rights reserved.
+Built withfor privacy & ethics

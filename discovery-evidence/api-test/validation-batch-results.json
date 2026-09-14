@@ -1,0 +1,314 @@
+[
+  {
+    "id": "API-07-empty-messages",
+    "requestBody": {
+      "messages": []
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-08-invalid-messages-type",
+    "requestBody": {
+      "messages": "hello"
+    },
+    "status": 400,
+    "response": {
+      "error": {
+        "message": "Invalid request: messages array is required",
+        "type": "invalid_request_error",
+        "code": "invalid_messages"
+      }
+    }
+  },
+  {
+    "id": "API-09-invalid-model",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "model": "gpt-4"
+    },
+    "status": 400,
+    "response": {
+      "error": {
+        "type": "invalid_model",
+        "message": "Only 'thaura' model is supported. Please set model to 'thaura' or omit the parameter.",
+        "code": "invalid_model"
+      }
+    }
+  },
+  {
+    "id": "API-10-temp-below-0",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "temperature": -0.1
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-11-temp-above-2",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "temperature": 2.1
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-12-temp-boundary-0",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "temperature": 0,
+      "max_tokens": 5
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-13-temp-boundary-2",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "temperature": 2,
+      "max_tokens": 5
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-15-max_completion_tokens-over-cap",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "max_completion_tokens": 32001
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-15b-max_tokens-over-cap",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "max_tokens": 32001
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-14-max_completion_tokens-boundary-32000",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "max_completion_tokens": 32000
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-17-both-max-params-precedence",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "max_tokens": 500,
+      "max_completion_tokens": 100
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-18-legacy-functions-param",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "functions": [
+        {
+          "name": "test",
+          "parameters": {}
+        }
+      ]
+    },
+    "status": 400,
+    "response": {
+      "error": {
+        "type": "invalid_request_error",
+        "message": "The legacy 'functions' and 'function_call' parameters are not supported. Use 'tools' and 'tool_choice' instead (OpenAI's current function-calling API).",
+        "code": "unsupported_parameter"
+      }
+    }
+  },
+  {
+    "id": "API-19-legacy-function_call-param",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "function_call": "auto"
+    },
+    "status": 400,
+    "response": {
+      "error": {
+        "type": "invalid_request_error",
+        "message": "The legacy 'functions' and 'function_call' parameters are not supported. Use 'tools' and 'tool_choice' instead (OpenAI's current function-calling API).",
+        "code": "unsupported_parameter"
+      }
+    }
+  },
+  {
+    "id": "API-20-ignored-params-format-check",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "top_p": 0.5,
+      "frequency_penalty": 1,
+      "presence_penalty": 1,
+      "n": 1,
+      "user": "qa-test"
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  },
+  {
+    "id": "API-21-tools-format-check",
+    "requestBody": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "hi"
+        }
+      ],
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "parameters": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        }
+      ],
+      "tool_choice": "auto"
+    },
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  }
+]
