@@ -22,7 +22,7 @@ Welcome to Thaura
 Check your email
 
 We sent a verification code to
-ferdoushasanferdous@gmail.com
+<REDACTED_EMAIL>
 
 Back
 Resend in 30s

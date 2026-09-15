@@ -1,0 +1,316 @@
+<h1>Qtec Solutions Limited — SQA Engineer Assessment</h1>
+<p><strong>Application under test:</strong> Thaura AI (https://thaura.ai / https://backend.thaura.ai)<br>
+<strong>Assessment window:</strong> 2026-09-14 to 2026-09-15<br>
+<strong>Companion file:</strong> Test Cases / Bug Report / Observations spreadsheet (submitted alongside this document)</p>
+
+<h2>1. Executive Summary</h2>
+<p>Thaura AI is a consumer chat application ("ethical AI companion") with a free tier (5 messages / 5 hours), file upload/analysis, an automatic long-term memory subsystem, an Incognito mode, and a separate OpenAI-compatible paid developer API. This assessment covered functional, session/security, quota, file-handling, memory/incognito, and API testing (Task 01); website technical/functional/performance/security testing (Task 02); and a personal reflection on AI-assisted testing practice (Task 03).</p>
+<p>The product behaves correctly and safely across the large majority of tested scenarios. No exploitable security vulnerability was identified within the scope of the security checks performed — this does not constitute a complete security audit. One reproducible frontend defect was found (a React hydration error present on every marketing page). A handful of nuanced observations are documented, most notably around how the automatic memory feature actually triggers, and a wording-precision gap between marketing copy and the legal Data Processing Addendum regarding encryption. A defined, small set of deeper API behaviors remain billing-gated and were deliberately not pursued, with reasoning documented below.</p>
+
+<h2>2. Test Environment</h2>
+<ul>
+<li><strong>Application:</strong> https://thaura.ai (frontend), https://backend.thaura.ai (API)</li>
+<li><strong>Test account:</strong> a single dedicated QA account ("Qa Test", Free Plan) created for this assessment — not a real third-party account</li>
+<li><strong>Automation:</strong> Playwright (Chromium, headless), Node.js</li>
+<li><strong>Auxiliary tools:</strong> Google Lighthouse (performance/SEO/accessibility/best practices), Apache JMeter (conservative load baseline), Python 3 (openpyxl for reporting, Pillow for evidence redaction)</li>
+</ul>
+
+<h2>3. Testing Approach</h2>
+<p>Testing combined scripted, evidence-generating automation with manual interpretation of results, deliberately favoring a small number of well-designed, information-dense test messages over exhaustive brute-force testing — the free tier's 5-message/5-hour quota made this a hard constraint. Where a test's own automation logic produced a surprising result (e.g. an apparent incognito "leak"), the underlying DOM/network evidence was re-inspected before accepting the result — this caught two automation bugs (a broken incognito-toggle selector, and an over-broad sidebar-text selector) that would otherwise have produced false findings. This distinction — verified finding vs. automation artifact — is preserved throughout this report.</p>
+
+<h2>4. Task 01 — Comprehensive Technical Testing of Thaura Web App</h2>
+
+<h3>4.1 Authentication &amp; Session Handling</h3>
+
+<h4>Test ID: AUTH-001</h4>
+<p><strong>Scenario:</strong> OTP-based signup end-to-end (email → OTP request → OTP verify → session issued).<br>
+<strong>Expected Result:</strong> Account created, session issued, redirected to authenticated dashboard.<br>
+<strong>Actual Result:</strong> Flow completed exactly as expected.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> signup-step1/2-requests.json, 06-after-otp.png. OTP code itself was never captured or logged in any evidence file.</p>
+
+<h4>Test ID: AUTH-002 / AUTH-003</h4>
+<p><strong>Scenario:</strong> Session cookie (thaura_token) security attributes and lifetime.<br>
+<strong>Expected Result:</strong> httpOnly, Secure, reasonable SameSite policy.<br>
+<strong>Actual Result:</strong> httpOnly=true, Secure=true, SameSite=Lax confirmed. Token expiry is ~1 year from issuance.<br>
+<strong>Status:</strong> PASS / OBSERVATION (long lifetime noted, not a vulnerability — mitigated by httpOnly/Secure flags, no exploit demonstrated).<br>
+<strong>Evidence:</strong> session-cookies-redacted.json, token-claims-safe.json.</p>
+
+<h4>Test ID: AUTH-004 / AUTH-005</h4>
+<p><strong>Scenario:</strong> Logout invalidation, including across concurrent browser contexts on the same account.<br>
+<strong>Expected Result:</strong> Logout invalidates the session server-side (not just cleared client-side).<br>
+<strong>Actual Result:</strong> Confirmed — a replayed old token returns 401 after logout. Additionally, logging out in one context also invalidated a second, concurrently-open context on the same account (a stricter behavior than a per-device model, not a weakness — no unauthorized access resulted).<br>
+<strong>Status:</strong> PASS / OBSERVATION<br>
+<strong>Evidence:</strong> logout-invalidation-summary.json.</p>
+
+<h4>Test ID: AUTH-006 / AUTH-007 / AUTH-008</h4>
+<p><strong>Scenario:</strong> Concurrent sessions allowed (product design choice); non-admin/anonymous cannot reach privileged views; no password-based login exists.<br>
+<strong>Actual Result:</strong> Concurrent sessions confirmed permitted (OBSERVATION). No admin UI reachable by anonymous or standard accounts (PASS). Thaura is OTP-only, no password field anywhere (NOT APPLICABLE).<br>
+<strong>Evidence:</strong> concurrent-session-check.json, website-scan/admin-access-check.json, settings-password-check.json.</p>
+
+<h3>4.2 Free Tier Message Limit</h3>
+
+<h4>Test ID: QUOTA-001 to QUOTA-005</h4>
+<p><strong>Scenario:</strong> 5-message/5-hour free quota enforcement, 6th-message block, server-side enforcement (direct API bypass attempt), 5-hour reset window, and UI quota-state reflection.<br>
+<strong>Expected Result:</strong> Quota enforced server-side, not just in the UI; correct reset timing; clear UI messaging.<br>
+<strong>Actual Result:</strong> All confirmed. Direct call to the chat-send endpoint after exhaustion returned <code>429 rate_limit_exceeded</code>, proving server-side enforcement independent of the UI. Reset window confirmed at ~5 hours on two separate occasions.<br>
+<strong>Status:</strong> PASS (all)<br>
+<strong>Evidence:</strong> quota-test/quota-test-log.json, chat-network-requests.json, bypass-check-result.json, msg-6.png.</p>
+
+<h4>Test ID: QUOTA-006</h4>
+<p><strong>Scenario:</strong> Do Incognito-mode messages consume the same free-tier quota?<br>
+<strong>Actual Result:</strong> Yes — remaining decremented identically to a normal message (2→1).<br>
+<strong>Status:</strong> OBSERVATION (not a bug; simply not obvious from UI copy)<br>
+<strong>Evidence:</strong> memory-incognito-test/incognito-verified-results.json.</p>
+
+<h4>Test ID: QUOTA-007 — Failed/errored assistant response and quota consumption</h4>
+<p><strong>Scenario:</strong> Does a failed/errored assistant response still consume a free-tier message? Quota was checked before and after a controlled, safe attempt to induce a failure.<br>
+<strong>Steps:</strong> 1) Checked quota (remaining=1). 2) Sent a message requiring a long streamed reply. 3) Reloaded the page ~1.6s later to drop the client connection mid-stream (a safe, realistic scenario — not an abusive technique). 4) Checked backend turn state and quota afterward. 5) Separately, sent a malformed payload directly to the session-authenticated completions endpoint with quota already at 0.<br>
+<strong>Expected Result:</strong> Determine whether a genuine failure consumes a message.<br>
+<strong>Actual Result:</strong> The backend has a <strong>resumable-turn architecture</strong> — generation completed successfully server-side regardless of the client disconnect, and the UI resumed and displayed the full, correct answer after reload. This was a successful, interrupted response, not a failed one; quota was correctly consumed for a successful turn. The malformed-payload probe returned a clean 400 and did not consume quota (quota stayed at 0). Neither scenario constitutes a genuine assistant-side (generation) failure.<br>
+<strong>Status:</strong> NOT TESTED<br>
+<strong>Reason:</strong> A genuine assistant-side generation failure could not be safely and deliberately reproduced without abusive techniques (e.g., adversarial prompts intended to crash the model, or resource-exhaustion attempts), which were explicitly out of scope.<br>
+<strong>Limitation:</strong> What was verified: client disconnects do not cause failures (backend resumes and bills normally); request-validation errors (400) are not billed. What was not verified: behavior when the assistant's own generation genuinely errors out mid-response.<br>
+<strong>Evidence:</strong> quota-test/failed-response-quota-test.json, malformed-session-request-results.json.</p>
+
+<h3>4.3 File Upload &amp; Data Integrity</h3>
+
+<h4>Test ID: FILE-001 / FILE-002</h4>
+<p><strong>Scenario:</strong> Valid PDF and XLSX upload, extraction accuracy, and assistant access to extracted content.<br>
+<strong>Expected Result:</strong> Upload succeeds; extracted content is accurate; the assistant can use it in a reply.<br>
+<strong>Actual Result:</strong> The upload API returned exact embedded text/values for both file types (verified against known planted markers). Critically, a live, non-quota-blocked chat turn confirmed the <strong>assistant itself</strong> correctly quoted the extracted PDF marker back — not just that the upload endpoint parses it.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> upload-test/extraction-verification.json, memory-incognito-test/full-test-results.json.</p>
+
+<h4>Test ID: FILE-003</h4>
+<p><strong>Scenario:</strong> Valid PNG image upload.<br>
+<strong>Actual Result:</strong> Upload succeeds; at upload time the API records only a generic "Image file: &lt;name&gt;" placeholder (no OCR/text extraction at that stage). Whether the assistant can read embedded image text via multimodal vision in a live chat turn was not independently re-verified this round (deprioritized under the free-tier quota budget in favor of memory/incognito/isolation tests).<br>
+<strong>Status:</strong> OBSERVATION / NOT TESTED (partial)<br>
+<strong>Evidence:</strong> upload-test/extraction-verification.json.</p>
+
+<h4>Test ID: FILE-004 to FILE-009 — Invalid/boundary file handling</h4>
+<p><strong>Scenario:</strong> Empty file, corrupted PDF, corrupted PNG, password-protected PDF, oversized 8MB, oversized 60MB.<br>
+<strong>Expected Result:</strong> Clean rejection, no crash, no silent accept, no sensitive data exposed.<br>
+<strong>Actual Result:</strong> Empty files: "Cannot upload empty file." (client-side, no request fired). Corrupted PDF: server 400, clear message. Corrupted PNG: accepted (200) — inconsistent with the PDF case, but explained by the image pipeline treating all images as opaque at upload time; no crash or data exposure (OBSERVATION, not a bug). Password-protected PDF: server 400, same message as corrupted case (accurate but not disambiguated — minor UX note). Oversized 8MB: rejected client-side. Oversized 60MB: "File size exceeds the 50MB limit."<br>
+<strong>Status:</strong> PASS (all, with two OBSERVATIONs noted above)<br>
+<strong>Evidence:</strong> upload-test/results.json (full matrix).</p>
+
+<h4>Test ID: FILE-010 to FILE-012</h4>
+<p><strong>Scenario:</strong> No server errors/crashes across the invalid-file matrix; no sensitive data in error responses; correct upload/loading/error UI states.<br>
+<strong>Actual Result:</strong> All confirmed — no 5xx responses anywhere; error bodies contain only generic messages; distinct, correct visual states across the full matrix.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> upload-test/results.json, *-after-attach.png, *-after-send.png.</p>
+
+<h3>4.4 Cross-Conversation / Session Isolation</h3>
+
+<h4>Test ID: ISO-001</h4>
+<p><strong>Scenario:</strong> Direct/unauthenticated access to a file by ID.<br>
+<strong>Actual Result:</strong> Authenticated-wrong-context → 404; unauthenticated → 401. No path exposed file content.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> upload-test/isolation-probe-results.json.</p>
+
+<h4>Test ID: ISO-002</h4>
+<p><strong>Scenario:</strong> File content does not leak into a different conversation on the same account.<br>
+<strong>Actual Result:</strong> In a fresh conversation, the assistant explicitly and correctly denied having access to a file uploaded in a different conversation.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> memory-incognito-test/full-test-results.json.</p>
+
+<h4>Test ID: ISO-003</h4>
+<p><strong>Scenario:</strong> Cross-account file isolation (two distinct real accounts).<br>
+<strong>Status:</strong> NOT TESTED<br>
+<strong>Reason:</strong> Assessment scope explicitly excludes using another real person's account.<br>
+<strong>Limitation:</strong> The same-account cross-conversation test (ISO-002) and the direct-ID-access test (ISO-001) together give reasonable, but not exhaustive, confidence that isolation is enforced server-side rather than by client-side hiding alone.</p>
+
+<h3>4.5 Memory</h3>
+
+<h4>Test ID: MEM-001</h4>
+<p><strong>Scenario:</strong> Does a verbal "remember this fact" instruction persist across conversations?<br>
+<strong>Actual Result:</strong> The assistant explicitly stated it cannot store such instructions as a standing rule; a later, unrelated conversation correctly reported not knowing the planted fact. No false claim of persistence was made.<br>
+<strong>Status:</strong> OBSERVATION (not FAIL — the assistant is transparent about the limitation up front, so no expectation was actually violated)<br>
+<strong>Evidence:</strong> memory-incognito-test/full-test-results.json.</p>
+
+<h4>Test ID: MEM-002 / MEM-003 — Memory settings panel</h4>
+<p><strong>Scenario:</strong> Investigate the dedicated "Memory" panel (Account menu → Memory) to determine whether a distinct memory system exists.<br>
+<strong>Actual Result:</strong> A genuine, distinct automatic memory subsystem exists, backed by a real API (<code>GET /api/memories</code>, capacity ceiling 12,000 tokens, hard cap 18,000). UI copy: "As you chat, Thaura writes down what is worth keeping." After our short, synthetic test conversations, the store was still empty ("Nothing remembered yet") — consistent with, and explaining, the MEM-001 recall failure. This is evidence the feature triggers on the system's own judgment over genuine usage, not on a direct verbal command — not evidence of a broken feature.<br>
+<strong>Status:</strong> PASS (feature confirmed) / OBSERVATION (empty after our tests)<br>
+<strong>Evidence:</strong> memory-incognito-test/memory-settings-network-log.json, memory-settings-bodytext.txt, 11-memory-settings-panel.png.</p>
+
+<h4>Test ID: MEM-004</h4>
+<p><strong>Scenario:</strong> Refresh/reload preserves in-chat state.<br>
+<strong>Actual Result:</strong> Confirmed — chat content and prior answers preserved; no retroactive memory gain of the earlier marker.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> memory-incognito-test/full-test-results.json.</p>
+
+<h3>4.6 Incognito</h3>
+
+<h4>Test ID: INCOG-001</h4>
+<p><strong>Scenario:</strong> Incognito toggle activates correctly.<br>
+<strong>Actual Result:</strong> "You're incognito" / "Exit incognito" states confirmed, after correcting an automation bug where the first attempt clicked an invisible screen-reader-only element and silently failed.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> memory-incognito-test/incognito-verified-results.json.</p>
+
+<h4>Test ID: INCOG-002 / INCOG-003</h4>
+<p><strong>Scenario:</strong> Incognito conversations do not appear in chat history; no persistent/addressable URL.<br>
+<strong>Actual Result:</strong> Confirmed on both counts. An earlier automated flag of a possible sidebar "leak" was investigated and found to be a false positive from an over-broad text selector — ground truth confirmed no leak.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> memory-incognito-test/incognito-verified-results.json.</p>
+
+<h4>Test ID: INCOG-004 / INCOG-005</h4>
+<p><strong>Scenario:</strong> Incognito content does not leak into normal memory; exiting incognito works cleanly.<br>
+<strong>Actual Result:</strong> Confirmed both.<br>
+<strong>Status:</strong> PASS<br>
+<strong>Evidence:</strong> memory-incognito-test/full-test-results.json, incognito-verified-results.json.</p>
+
+<h3>4.7 Developer API</h3>
+
+<h4>Test ID: API-001 to API-006 — Structural validation, model validation, billing gate</h4>
+<p><strong>Scenario:</strong> Missing/invalid <code>messages</code>, invalid model, legacy <code>functions</code>/<code>function_call</code> parameters, zero-balance handling, and validation ordering.<br>
+<strong>Actual Result:</strong> All structural/model/legacy-parameter checks correctly return <code>400</code> with clear messages, independent of billing state (re-confirmed against the session-authenticated endpoint too). Zero-balance, otherwise-valid requests correctly return <code>402 insufficient_balance</code>, "Minimum required: $0.10", with no charge incurred. Validation ordering confirms structural checks run before the billing gate, which in turn runs before model execution.<br>
+<strong>Status:</strong> PASS (14 distinct cases)<br>
+<strong>Evidence:</strong> api-test/validation-batch-results.json.</p>
+
+<h4>Test ID: API-007 to API-013 — Billing-gated behavioral tests</h4>
+<p><strong>Scenario:</strong> Temperature boundary enforcement, max_tokens/max_completion_tokens behavior and the 32000 cap, parameter precedence, ignored parameters, tools/tool_choice, streaming, usage accounting.<br>
+<strong>Status:</strong> BLOCKED<br>
+<strong>Reason:</strong> The billing gate returns <code>402</code> before any of this deeper, execution-layer behavior can be observed — it requires a funded balance.<br>
+<strong>Limitation:</strong> Structural acceptance of these parameters (no 400) was confirmed; their actual effect on generation was not.<br>
+<strong>Evidence:</strong> api-test/validation-batch-results.json (API-10 through API-21).</p>
+
+<h4>Test ID: API-014 — Rate/concurrency limits</h4>
+<p><strong>Status:</strong> NOT TESTED<br>
+<strong>Reason:</strong> Would require multiple funded, near-simultaneous calls; not attempted, both due to lack of balance and to avoid any appearance of a DoS-style probe against production infrastructure.</p>
+
+<h4>API Funding Decision — DO NOT FUND</h4>
+<p>Zero-balance testing already exercised the full structural-validation surface and confirmed the billing gate itself behaves correctly and transparently. The remaining untested items require a successful, funded generation call to observe. <strong>Estimated scope:</strong> ~10–13 minimal API calls, realistically well under $0.05 in actual usage cost — against the platform's flat <strong>$10 minimum top-up</strong>. Every one of these remaining checks validates generic OpenAI-API-compatible parameter pass-through behavior rather than Thaura-specific logic. <strong>Recommendation: DO NOT FUND</strong> — documented transparently as BLOCKED rather than silently omitted. No paid API calls were made.</p>
+
+<h3>4.8 Negative &amp; Boundary Testing</h3>
+<p><strong>Test ID: NEG-001</strong> — Unicode/RTL/emoji/long-string input handling: Bangla, Arabic RTL, mixed-script, emoji, 1000-character, and special-character samples all round-tripped correctly in form fields. <strong>Status: PASS.</strong></p>
+<p><strong>Test ID: NEG-002</strong> — Blank/invalid form submission handling: client-side validation correctly blocks blank and invalid-email submissions. <strong>Status: PASS.</strong></p>
+<p><strong>Test ID: NEG-003</strong> — API structural/boundary negative-case batch (14 distinct cases): every case produced a correct, well-formed error. <strong>Status: PASS.</strong></p>
+<p><strong>Evidence:</strong> unicode-test/results.json, website-scan/contact-blank-submit.png, contact-invalid-email-submit-attempt.png, api-test/validation-batch-results.json.</p>
+
+<h2>5. Task 02 — Thaura.ai Website Technical Testing</h2>
+
+<h3>5.1 Functional &amp; Data Testing</h3>
+<p><strong>Test ID: WEB-001 / WEB-002</strong> — Full 16-page site crawl (all pages return 200, no broken links); contact form field validation (required-field enforcement, email format validation). <strong>Status: PASS</strong> for both.<br>
+<strong>Evidence:</strong> website-scan/scan-results.json, contact-form-fields.json, contact-blank-submit.png, contact-invalid-email-submit-attempt.png.</p>
+
+<h3>5.2 Links &amp; Redirects</h3>
+<p><strong>Test ID: LINK-001</strong> — Every internal link from the homepage was extracted and followed. <strong>Actual Result:</strong> No broken links or unexpected redirects found across the site. <strong>Status: PASS.</strong><br>
+<strong>Evidence:</strong> website-scan/scan-results.json, extracted-links.txt, homepage-links.json.</p>
+
+<h3>5.3 Pricing</h3>
+<p><strong>Test ID: PRICE-001</strong> — Monthly vs. annual pricing consistency. <strong>Actual Result:</strong> $15/month monthly; $12/month annual (billed $144/year) is exactly 20% off, matching the advertised "Save 20%" badge. <strong>Status: PASS.</strong><br>
+<strong>Evidence:</strong> website-scan/pricing-toggle-result.json, pricing-default-state.png, pricing-monthly-selected.png, pricing-annual-selected.png.</p>
+
+<h3>5.4 SEO / Metadata</h3>
+<p><strong>Test ID: SEO-001 / SEO-002</strong> — Canonical/Open Graph/Twitter Card metadata correctness; Lighthouse SEO scoring. <strong>Actual Result:</strong> All metadata present and correct; perfect 1.0 SEO score on every page tested (home, pricing, api-platform, faq). <strong>Status: PASS.</strong><br>
+<strong>Evidence:</strong> website-scan/scan-results.json, lighthouse/summary.json.</p>
+
+<h3>5.5 Performance</h3>
+<p><strong>Test ID: PERF-001</strong> — Lighthouse performance scoring: 0.72–0.82 across the 4 pages tested; LCP 4.5s–6.2s (FAQ and home are the slowest). Acceptable but not exceptional — worth a look at largest-contentful-paint asset loading if performance is a priority. <strong>Status: OBSERVATION.</strong><br>
+<strong>Test ID: PERF-002</strong> — Conservative JMeter baseline (5 concurrent users, 3 loops, public static pages only — <code>backend.thaura.ai</code>, chat, and billing endpoints deliberately excluded): 45 requests, <strong>0% errors</strong>, avg 1,035.7ms, p95 1,191.6ms. <strong>Status: PASS.</strong> This is explicitly a light health-check, not a capacity/stress test.<br>
+<strong>Evidence:</strong> lighthouse/summary.json, performance/jmeter/results-summary.json.</p>
+
+<h3>5.6 Console / Network</h3>
+<p><strong>Test ID: CONSOLE-001</strong> — Browser console error scan (Lighthouse best-practices audit) across home/pricing/api-platform/faq. <strong>Actual Result:</strong> A React hydration error (minified error #418) fires on every one of the 4 pages tested — see BUG-001. No functional/visual break observed in manual testing, but it indicates a real server/client render mismatch and pollutes the console. Not caught by the project's earlier general console-message capture script; found specifically via the Lighthouse audit. <strong>Status: FAIL (see BUG-001).</strong><br>
+<strong>Evidence:</strong> lighthouse/home-full-report.json, pricing-full-report.json, api-full-report.json, faq-full-report.json (audits.errors-in-console).</p>
+
+<h3>5.7 Security</h3>
+<p><strong>Test ID: WEBSEC-001 to WEBSEC-004</strong> — Standard security headers (HSTS, X-Content-Type-Options, X-Frame-Options: DENY, Referrer-Policy, Permissions-Policy) present on every page; CSP is reasonably strict (default-src 'self', object-src 'none'), with one Security Observation noted below (SECOBS-001); no secrets/keys found in the client-side bundle scan; a small number of endpoints (e.g. plugin catalog) are reachable pre-authentication but return only public, non-user data. <strong>Status: PASS</strong> (with observations noted separately in Section 9).<br>
+<strong>Evidence:</strong> website-scan/security-headers.txt, source-scan/, auth-requests-redacted.json.</p>
+<p><strong>No exploitable security vulnerability was identified within the scope of the security checks performed.</strong> This does not constitute a complete security audit.</p>
+
+<h3>5.8 Technical Claims</h3>
+<p><strong>Test ID: CLAIM-001</strong> — Encryption wording consistency across marketing and legal pages. <strong>Actual Result:</strong> Homepage/privacy-policy broadly state "encrypted at rest (AES-256-GCM)", while the Data Processing Addendum specifies application-level field encryption for "selected sensitive fields" specifically (with separate disk/object-storage-level encryption described elsewhere in the same document). This is a wording-precision nuance for legal/copy review, not a demonstrated false claim — implementation details cannot be verified or refuted from the client side. <strong>Status: OBSERVATION.</strong><br>
+<strong>Evidence:</strong> claims-check/home-text.txt, privacy-policy-text.txt, data-processing-addendum-text.txt.</p>
+
+<h2>6. Task 03 — AI &amp; Testing Reflection</h2>
+
+<h4>1. How will AI impact software testing in the next 2–3 years?</h4>
+<p>The biggest shift won't be "AI replaces testers," it'll be AI collapsing the time between having a test idea and having evidence for it. Right now a lot of QA time goes into the mechanical part — writing the Playwright boilerplate, generating edge-case fixtures, parsing network logs, drafting the bug report — rather than the actual judgment part: deciding what's worth testing and what a given result actually means. Over the next 2–3 years that mechanical layer will keep shrinking; exploratory testing sessions will increasingly look like a tester describing intent in plain language and an AI agent driving the browser/API, capturing evidence, and coming back with a structured first draft of findings — close to how this assessment was actually worked through. What won't go away is the judgment layer: deciding whether a decremented quota counter after a dropped connection is a bug or a resumable-turn feature, deciding whether a long-lived cookie is a real security issue or just a product choice, deciding when a "leak" your own automation flagged is actually a false positive from a bad selector. That discipline — including the discipline of not fabricating a result you didn't actually observe — is exactly where a human tester's value moves to.</p>
+
+<h4>2. How have you personally used AI to help with testing?</h4>
+<p>On this exact assessment: an AI coding agent (Claude Code) was used to write and iterate on the Playwright automation for almost every test area — the OTP/login flow, the 5-message quota exhaustion test, the file-upload matrix, the memory/incognito probes, and the direct API validation batch. It also helped debug a real automation bug mid-session: an "incognito toggle" click was silently failing because it targeted a screen-reader-only span instead of its parent button, and an overly broad <code>.catch()</code> was swallowing the resulting timeout — pulling the actual DOM structure and spotting the mismatch happened faster with the agent driving the diagnosis than manually inspecting minified HTML. It was also used for deterministic test-data generation (PDF/XLSX/PNG fixtures with known embedded markers, so extraction accuracy could be verified exactly), for analyzing raw API/network JSON at volume, and for drafting the structured write-ups from that raw evidence.</p>
+
+<h4>3. Which AI tools do you currently use?</h4>
+<p>Claude Code (Anthropic) was the tool used throughout this assessment — as an agent that writes and runs Playwright/Node scripts, calls APIs directly for validation testing, and turns raw evidence into structured reports. Alongside it, standard non-AI QA tooling was used for the parts that don't need a model in the loop: Lighthouse for performance/SEO/accessibility scoring and JMeter for baseline load testing — listed here for completeness, not counted as "AI tools," since the value they add is deterministic measurement, not reasoning.</p>
+
+<h4>4. Which AI testing tool has been most helpful and why?</h4>
+<p>Claude Code, specifically for the agentic part rather than just code completion. The most helpful pattern wasn't "generate a test script" in isolation — it was the loop of: run a probe, look at the actual response/DOM, notice something inconsistent (like a false-positive "leak" caused by a selector capturing the wrong element, or a chat-quota result that only makes sense once you realize the backend has resumable streaming turns), and revise the next test based on that, all within one continuous session. For an assessment like this one, where a lot of the real findings come from noticing when your own tooling is misleading you, having the same agent write the probe, read the raw output, and flag the discrepancy in one pass was more valuable than any single generated test case.</p>
+
+<h2>7. Defects</h2>
+<h4>BUG-001 — React hydration error #418 on marketing pages</h4>
+<p><strong>Module:</strong> Frontend — Marketing site (home, pricing, api-platform, faq)<br>
+<strong>Severity:</strong> Low &nbsp;|&nbsp; <strong>Priority:</strong> Medium<br>
+<strong>Steps to Reproduce:</strong> 1) Open a fresh/incognito browser session. 2) Navigate to https://thaura.ai/ (also reproduced on /pricing, /api-platform, /faq). 3) Open DevTools Console. 4) Observe the page load complete.<br>
+<strong>Expected Result:</strong> No JavaScript exceptions logged; server-rendered HTML matches the client's initial render.<br>
+<strong>Actual Result:</strong> Console logs "Error: Minified React error #418" (hydration mismatch) on every one of the 4 pages audited via Lighthouse. Pages remain visually correct and interactive in manual testing.<br>
+<strong>Impact:</strong> Low functional impact observed; indicates a real SSR/CSR markup mismatch and pollutes the console, which could mask other real errors in production monitoring.<br>
+<strong>Evidence:</strong> lighthouse/home-full-report.json, pricing-full-report.json, api-full-report.json, faq-full-report.json (audits.errors-in-console).<br>
+<strong>Status:</strong> Open</p>
+<p>No other reproducible functional defects were found in either the web application or the marketing site during this assessment.</p>
+
+<h2>8. Observations</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>ID</th><th>Area</th><th>Observation</th></tr>
+<tr><td>OBS-001</td><td>File Upload</td><td>Corrupted PNG accepted (200) while corrupted PDF rejected (400) — image pipeline treats all images as opaque; no crash/exposure.</td></tr>
+<tr><td>OBS-002</td><td>File Upload</td><td>Password-protected PDF error message identical to generic corrupted-file message (accurate, just not specific).</td></tr>
+<tr><td>OBS-003</td><td>Session Management</td><td>Logout in one context invalidates a concurrent second context on the same account too — stricter than per-device, not a weakness.</td></tr>
+<tr><td>OBS-004</td><td>Quota</td><td>Incognito messages count against the same free-tier quota as normal messages.</td></tr>
+<tr><td>OBS-005</td><td>Memory</td><td>Verbal "remember this" not persisted; a real automatic Memory subsystem exists but was empty after our short test conversations.</td></tr>
+<tr><td>OBS-006</td><td>Reliability/Architecture</td><td>Dropped client connection mid-response does not fail the reply — backend resumes and completes generation server-side.</td></tr>
+<tr><td>OBS-007</td><td>Legal/Marketing Wording</td><td>Marketing copy broadly states "encrypted at rest"; DPA specifies field-level encryption for "selected sensitive fields" — wording nuance, not a proven false claim.</td></tr>
+<tr><td>OBS-008</td><td>File Upload</td><td>Images are not OCR'd at upload time; assistant's live multimodal reading of image text was not independently re-verified this round.</td></tr>
+</table>
+
+<h2>9. Security Observations</h2>
+<p><strong>No exploitable security vulnerability was identified within the scope of the security checks performed.</strong> All items below are informational/awareness-level.</p>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>ID</th><th>Observation</th><th>Assessment</th></tr>
+<tr><td>SECOBS-001</td><td>CSP connect-src includes http://127.0.0.1:* / http://localhost:*</td><td>Likely dev-config leftover; only relevant given an independent script-injection primitive, none found.</td></tr>
+<tr><td>SECOBS-002</td><td>Session cookie has a ~1-year expiry</td><td>Mitigated by httpOnly/Secure/SameSite=Lax; no hijack/fixation impact demonstrated; a deliberate consumer-app UX choice.</td></tr>
+<tr><td>SECOBS-003</td><td>A few endpoints (e.g. plugin catalog) reachable pre-auth</td><td>Returns public, non-user data by design; not a vulnerability.</td></tr>
+<tr><td>SECOBS-004</td><td>Hydration-error stack trace names internal build chunk files</td><td>Standard, content-hashed Next.js output; no source/secrets exposed.</td></tr>
+</table>
+
+<h2>10. Not Tested / Blocked</h2>
+<ul>
+<li><strong>Failed/errored assistant-side response and quota consumption — NOT TESTED.</strong> Could not be safely reproduced without abusive techniques; see Section 4.2 (QUOTA-007) for the full detail of what was and wasn't verified.</li>
+<li><strong>Billing-gated API parameter tests (temperature bounds, token caps, precedence, ignored parameters, tools/tool_choice, streaming, usage accounting) — BLOCKED.</strong> Estimated ~10–13 calls / &lt;$0.05 actual cost vs. a $10 platform minimum top-up. <strong>Decision: DO NOT FUND.</strong></li>
+<li><strong>API rate/concurrency limits — NOT TESTED.</strong> Would require multiple funded, near-simultaneous calls; avoided to prevent any appearance of a DoS-style probe.</li>
+<li><strong>Image-embedded text readability by the assistant in a live chat turn — NOT TESTED (partial).</strong> Deprioritized under the free-tier message budget.</li>
+<li><strong>Cross-account file isolation — NOT TESTED.</strong> Scope excludes use of another real person's account.</li>
+<li><strong>Incognito behavior under a mid-session refresh specifically — NOT TESTED.</strong> Not directly re-exercised this session.</li>
+</ul>
+
+<h2>11. Performance Results</h2>
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>Page</th><th>Lighthouse Performance</th><th>LCP</th><th>TBT</th><th>Total Size</th></tr>
+<tr><td>Home</td><td>0.73</td><td>5.7s</td><td>230ms</td><td>1,794 KiB</td></tr>
+<tr><td>Pricing</td><td>0.82</td><td>4.6s</td><td>140ms</td><td>890 KiB</td></tr>
+<tr><td>API Platform</td><td>0.82</td><td>4.5s</td><td>150ms</td><td>876 KiB</td></tr>
+<tr><td>FAQ</td><td>0.72</td><td>6.2s</td><td>160ms</td><td>907 KiB</td></tr>
+</table>
+<p>JMeter conservative baseline (5 users, 3 loops, public pages only): 45 requests, <strong>0% errors</strong>, avg 1,035.7ms, p95 1,191.6ms. This is a light health-check, not a capacity test.</p>
+
+<h2>12. Automation Strategy</h2>
+<p><strong>Playwright (already demonstrated in this assessment's scripts):</strong> auth/OTP flow, session/logout invalidation checks, chat quota exhaustion and reset-window verification, the file upload matrix and extraction-accuracy assertions, navigation/link/redirect checks, metadata/canonical checks, pricing-toggle consistency, and console/network error monitoring as a standing regression check (this would have caught BUG-001 automatically if wired into CI).</p>
+<p><strong>API automation (Playwright-API or Postman/Newman):</strong> structural/negative/boundary validation — a natural fit given the 14-case validation batch already produced.</p>
+<p><strong>JMeter:</strong> conservative load/performance baselining on public pages, expanded deliberately and incrementally if real load testing is later authorized.</p>
+<p><strong>Lighthouse:</strong> performance/SEO/accessibility/best-practices scoring, run per-release against a fixed page set.</p>
+<p><strong>Keep manual/hybrid:</strong> AI response quality and extraction-accuracy judgment (automation can capture the response; a human should judge correctness); memory semantics (the automatic memory subsystem responds to real usage patterns over time, not a single scripted probe); incognito behavior interpretation (automated leak-detection selectors can produce false positives that need human DOM-level verification, as this assessment demonstrated); and security interpretation/severity classification (a status code is easy to assert in a script; whether a behavior constitutes a real security concern is a judgment call).</p>
+<p>This assessment deliberately did not build a full automation framework — the priority was completing manual/hybrid verification of every requirement first. The scripts produced are a reasonable starting point for a future framework, not a finished one.</p>
+
+<h2>13. Limitations</h2>
+<ul>
+<li>A mid-session environment reset deleted several evidence files after they were generated during finalization; the underlying structured data (JSON) was recovered verbatim from the session's own tool output and is clearly marked as recovered, but 11 screenshots from those two test runs could not be byte-for-byte restored and are considered lost.</li>
+<li>Image-embedded-text readability by the assistant in a live chat turn was not independently re-verified this round (budget was prioritized toward memory/incognito/isolation tests).</li>
+<li>Cross-account file isolation was not tested — scope excludes use of another real person's account.</li>
+<li>A defined set of deeper API parameter/behavioral tests and rate/concurrency limits remain billing-gated; funding was evaluated and explicitly not recommended.</li>
+<li>A genuine assistant-side (generation) failure could not be safely reproduced without abusive techniques.</li>
+<li>This assessment does not constitute a complete security audit — findings are scoped strictly to what was directly observed and verified.</li>
+</ul>
+
+<h2>14. Conclusion</h2>
+<p>Thaura AI's core flows — authentication, quota enforcement, file handling, conversation/file isolation, incognito mode, and API input validation — all behave correctly and match their stated or reasonably-inferred design intent, with server-side enforcement backing the client-side UX in every case checked. The one reproducible defect found (a site-wide React hydration error) is low-severity and does not affect functionality as observed, but is worth fixing for console cleanliness and render correctness. No exploitable security vulnerability was identified within the scope of the security checks performed, and every flagged item is explicitly scoped as an observation rather than a demonstrated risk. The remaining gaps (a subset of API behavioral tests, one narrow file-type question, cross-account isolation) are explicitly scoped, justified, and documented rather than silently skipped or fabricated.</p>

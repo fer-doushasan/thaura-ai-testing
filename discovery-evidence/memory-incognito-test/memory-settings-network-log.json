@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://backend.thaura.ai/api/memories",
+    "status": 200,
+    "method": "GET",
+    "body": "{\"content\":\"\",\"updatedAt\":null,\"capacity\":{\"tokens\":0,\"ceiling\":12000,\"hardCap\":18000,\"full\":false}}"
+  },
+  {
+    "url": "https://backend.thaura.ai/api/memories/scopes",
+    "status": 200,
+    "method": "GET",
+    "body": "{\"scopes\":[]}"
+  }
+]

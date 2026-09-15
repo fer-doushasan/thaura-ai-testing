@@ -15,7 +15,7 @@
   },
   {
     "method": "GET",
-    "url": "https://backend.thaura.ai/api/auth/email-exists?email=ferdoushasanferdous%40gmail.com",
+    "url": "https://backend.thaura.ai/api/auth/email-exists?email=<REDACTED_EMAIL>%40<REDACTED_DOMAIN>",
     "postData": null,
     "status": 200,
     "body": "{\"exists\":false}"
@@ -23,7 +23,7 @@
   {
     "method": "POST",
     "url": "https://backend.thaura.ai/api/auth/request-otp",
-    "postData": "{\"email\":\"ferdoushasanferdous@gmail.com\",\"language\":\"en\"}",
+    "postData": "{\"email\":\"<REDACTED_EMAIL>\",\"language\":\"en\"}",
     "status": 200,
     "body": "{\"message\":\"OTP sent\"}"
   }

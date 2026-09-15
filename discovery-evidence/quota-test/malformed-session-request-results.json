@@ -1,0 +1,30 @@
+{
+  "startedAt": "2026-09-15T09:20:04.797Z",
+  "rateLimit_before": {
+    "allowed": false,
+    "remaining": 0,
+    "resetAt": "2026-09-15T13:48:14.823Z",
+    "plan": "Free Plan"
+  },
+  "malformed_missingMessages": {
+    "status": 400,
+    "bodySnippet": "{\"error\":{\"message\":\"Invalid request: messages array is required\",\"type\":\"invalid_request_error\",\"code\":\"invalid_messages\"}}"
+  },
+  "rateLimit_after_malformed1": {
+    "allowed": false,
+    "remaining": 0,
+    "resetAt": "2026-09-15T13:48:14.273Z",
+    "plan": "Free Plan"
+  },
+  "malformed_wrongMessagesType": {
+    "status": 400,
+    "bodySnippet": "{\"error\":{\"message\":\"Invalid request: messages array is required\",\"type\":\"invalid_request_error\",\"code\":\"invalid_messages\"}}"
+  },
+  "rateLimit_after_malformed2": {
+    "allowed": false,
+    "remaining": 0,
+    "resetAt": "2026-09-15T13:48:14.680Z",
+    "plan": "Free Plan"
+  },
+  "endedAt": "2026-09-15T09:20:06.745Z"
+}

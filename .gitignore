@@ -11,3 +11,8 @@ playwright/.cache/
 .state/api-key.txt
 .env
 .env.*
+
+# Unrelated project accidentally present in this working directory
+# (see backup-before-medha-cleanup branch / git reflog for history).
+# Intentionally excluded from the Thaura AI assessment repository.
+medha ai testing/

@@ -1,0 +1,129 @@
+{
+  "startedAt": "2026-09-15T09:17:15.962Z",
+  "rateLimit_before": {
+    "allowed": true,
+    "remaining": 1,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "activeTurns_before": {
+    "status": 200,
+    "body": {
+      "turns": []
+    }
+  },
+  "chatUrlBeforeInterrupt": "https://thaura.ai/?chatId=db58167f-0aa1-483d-bb25-377ee624c6d5",
+  "midStreamSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA interrupted-response test: please write a detailed 300-word explanation of the differences between TCP and UDP, covering reliability, ordering, and use cases.\nQA memory and file access check\nQA memory marker and document verification\nQA quota test\nQT\nQa Test\nFree Plan\nQA interrupted-response test: please write a detailed 300-word explanation of the differences between TCP and UDP, covering reliability, ordering, and use cases.\n3:17 PM\nWorking\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "interruptedAtMs": 1649,
+  "rateLimit_immediately_after_interrupt": {
+    "allowed": false,
+    "remaining": 0,
+    "resetAt": "2026-09-15T13:48:14.291Z",
+    "plan": "Free Plan"
+  },
+  "activeTurns_immediately_after_interrupt": {
+    "status": 200,
+    "body": {
+      "turns": [
+        {
+          "responseId": "chatcmpl-58673042d90e32510340ed160e59c92e",
+          "chatId": "db58167f-0aa1-483d-bb25-377ee624c6d5",
+          "messageId": "4954ea3b8a595c",
+          "status": "in_progress",
+          "startedAt": 1789463845453,
+          "endedAt": null,
+          "seq": 42,
+          "resumable": true
+        }
+      ]
+    }
+  },
+  "afterReloadSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA interrupted-response test: please write a detailed 300-word explanation of the differences between TCP and UDP, covering reliability, ordering, and use cases.\nQA memory and file access check\nQA memory marker and document verification\nQA quota test\nQT\nQa Test\nFree Plan\nQA interrupted-response test: please write a detailed 300-word explanation of the differences between TCP and UDP, covering reliability, ordering, and use cases.\n3:17 PM\n\nTCP and UDP are both transport-layer protocols, but they make fundamentally different trade-offs between reliability and speed.\n\nReliability: TCP is connection-oriented and guarantees delivery. It uses acknowledgments (ACKs),\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "rateLimit_after_wait": {
+    "allowed": false,
+    "remaining": 0,
+    "resetAt": "2026-09-15T13:48:14.759Z",
+    "plan": "Free Plan"
+  },
+  "activeTurns_after_wait": {
+    "status": 200,
+    "body": {
+      "turns": [
+        {
+          "responseId": "chatcmpl-58673042d90e32510340ed160e59c92e",
+          "chatId": "db58167f-0aa1-483d-bb25-377ee624c6d5",
+          "messageId": "4954ea3b8a595c",
+          "status": "completed",
+          "startedAt": 1789463845453,
+          "endedAt": 1789463855688,
+          "seq": 422,
+          "resumable": true
+        }
+      ]
+    }
+  },
+  "finalTextSnippet": "ifferent trade-offs between reliability and speed.\n\nReliability: TCP is connection-oriented and guarantees delivery. It uses acknowledgments (ACKs), retransmissions, and sequence numbers to ensure every byte arrives intact. If a packet is lost, TCP detects the missing ACK and resends it. UDP is connectionless and fire-and-forget: it sends datagrams without confirming receipt, so packets can be silently dropped.\n\nOrdering: TCP preserves order. Sequence numbers let the receiver reassemble out-of-order segments into the correct stream before handing data to the application. UDP makes no ordering guarantee—datagrams may arrive in any sequence, or not at all, and the protocol layer does nothing to fix that.\n\nOverhead: Because of its handshake (SYN/SYN-ACK/ACK), flow control, congestion control, and retransmission machinery, TCP carries more per-packet overhead and introduces variable latency. UDP has minimal header overhead (8 bytes vs. 20+ for TCP) and no setup phase, so it's faster but puts all error-handling responsibility on the application.\n\nUse cases:\n\nTCP suits anything where completeness matters: web browsing (HTTP/HTTPS), email (SMTP, IMAP), file transfer (FTP, SFTP), SSH, and database connections. Losing or duplicating a byte corrupts the payload, so the reliability mechanisms are worth the cost.\nUDP shines when freshness beats completeness: live video/audio streaming (RTSP, RTP), VoIP (WebRTC), online gaming, DNS queries, IoT sensor telemetry, and multicast/broadcast scenarios. A slightly delayed frame is worse than a dropped one, so applications tolerate loss and discard stale data rather than waiting for retransmits.\n\nIn practice, many systems layer their own reliability on top of UDP (QUIC, WebTransport) to get lower latency than TCP while still recovering from occasional loss—but pure TCP remains the default choice whenever correctness outweighs raw throughput.\n\n~6.2g CO₂ saved\nFeedback\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "networkLog": [
+    {
+      "url": "https://backend.thaura.ai/v1/chat/active-turns",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:20.183Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/api/chats/rate-limit/check",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:24.702Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/api/chats",
+      "status": 201,
+      "method": "POST",
+      "at": "2026-09-15T09:17:25.096Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/v1/chat/completions",
+      "status": 200,
+      "method": "POST",
+      "at": "2026-09-15T09:17:25.598Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/api/chats/db58167f-0aa1-483d-bb25-377ee624c6d5",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:26.575Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/v1/chat/active-turns",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:26.577Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/v1/chat/active-turn?chatId=db58167f-0aa1-483d-bb25-377ee624c6d5",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:26.593Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/api/messages/chat/db58167f-0aa1-483d-bb25-377ee624c6d5?offset=0&limit=100",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:26.615Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/v1/chat/turns/chatcmpl-58673042d90e32510340ed160e59c92e/events?starting_after=-1",
+      "status": 200,
+      "method": "GET",
+      "at": "2026-09-15T09:17:26.809Z"
+    },
+    {
+      "url": "https://backend.thaura.ai/api/chats/db58167f-0aa1-483d-bb25-377ee624c6d5/seen",
+      "status": 200,
+      "method": "POST",
+      "at": "2026-09-15T09:17:35.941Z"
+    }
+  ],
+  "endedAt": "2026-09-15T09:17:38.075Z"
+}

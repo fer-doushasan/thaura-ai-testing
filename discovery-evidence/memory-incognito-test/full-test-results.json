@@ -1,0 +1,50 @@
+{
+  "_recoveryNote": "This file was lost from disk due to an untracked-file cleanup event that occurred mid-session (between tool calls) after the original test run. It has been restored verbatim from the tool-call output captured earlier in the same assessment session's transcript. No values were altered, invented, or re-derived. The 8 screenshots this run originally produced (01-chatA-file-attached.png through 07-chatB-after-reload.png) could not be byte-for-byte restored and are considered lost; the structured JSON/text evidence below is the surviving record of this test.",
+  "startedAt": "2026-09-15T08:48:03.026Z",
+  "rateLimit_start": {
+    "allowed": true,
+    "remaining": 5,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "chatA_finalText": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA memory marker and document verification\nQA quota test\nQT\nQa Test\nFree Plan\nPDF\nPlease remember this fact for all future conversations: my QA memory marker is GOLDFISH-4471. Also, what is the verification marker string in the attached document? Quote it exactly.\n2:48 PM\n\nI can’t store arbitrary instructions like “remember this for all future conversations” as a standing rule, but I’m noting the marker you provided here.\n\nThe verification marker string in the attached document is:\n\nQA-DOC-MARKER-71934\n\n~6.1g CO₂ saved\nFeedback\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "chatA_fileMarkerFoundInReply": true,
+  "chatA_url": "https://thaura.ai/?chatId=9365a78b-73de-4292-8b1e-c3d634d11f48",
+  "rateLimit_after_msg1": {
+    "allowed": true,
+    "remaining": 4,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "incognitoToggledOn": false,
+  "rateLimit_before_incognito_send": {
+    "allowed": true,
+    "remaining": 4,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "incognitoChat_finalText": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA memory marker and document verification\nQA quota test\nQT\nQa Test\nFree Plan\nPDF\nPlease remember this fact for all future conversations: my QA memory marker is GOLDFISH-4471. Also, what is the verification marker string in the attached document? Quote it exactly.\n2:48 PM\n\nI can’t store arbitrary instructions like “remember this for all future conversations” as a standing rule, but I’m noting the marker you provided here.\n\nThe verification marker string in the attached document is:\n\nQA-DOC-MARKER-71934\n\nFeedback\nPlease remember this fact: my QA incognito marker is PURPLEZEBRA-9902.\n2:48 PM\n\nI can’t save that as a standing memory or apply it to future conversations, especially not in incognito mode where memory is disabled by design. I’ll keep the marker in mind for this conversation only if you need me to reference it here.\n\n~12.3g CO₂ saved\nFeedback\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "_note_incognitoToggledOn_false": "This message was actually sent in the SAME normal chat as message 1, not in real incognito - the 'Incognito mode' click target was an sr-only span inside a button and the click silently failed (swallowed by a .catch()). This was diagnosed and corrected in the follow-up incognito-verified-results.json run. The assistant's own reference to 'incognito mode' here is coincidental - it picked up the word 'incognito' from the user's own sentence ('my QA incognito marker'), not from actually being in incognito mode.",
+  "rateLimit_after_incognito_send": {
+    "allowed": true,
+    "remaining": 3,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "incognitoMarkerVisibleInSidebar": true,
+  "_note_sidebarFlag": "This flag was a false positive: the selector used to capture 'sidebar' text fell back to broader page content that included the active chat transcript itself, which naturally contains the just-sent message. The actual sidebar TODAY list only ever showed the 3 real, non-incognito chat titles. See incognito-verified-results.json for the corrected, properly-scoped check.",
+  "chatB_finalText": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nQA memory and file access check\nQA memory marker and document verification\nQA quota test\nQT\nQa Test\nFree Plan\nAnswer each part precisely and separately, labeled (1), (2), (3): (1) What is my QA memory marker? (2) What is my QA incognito marker? (3) Do you have access to the content of any file I uploaded earlier in a different conversation - if so, what does it say? For any part you do not know, explicitly say \"I don't know\" for that part.\n2:49 PM\n\n(1) I don't know.\n\n(2) I don't know.\n\n(3) No, I do not have access to the content of files uploaded in different conversations. My context is limited to this current conversation; previous chats and their attachments are not carried over here unless they've been saved into my memory system, and even then only summarized memories—not raw file contents—would be available. Since no relevant memories are present for you right now, I can't tell you what any such file said.\n\n~6.1g CO₂ saved\nFeedback\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "chatB_memoryMarkerRecalled": false,
+  "chatB_incognitoMarkerLeaked": false,
+  "chatB_fileMarkerLeaked": false,
+  "chatB_url": "https://thaura.ai/?chatId=54122710-974f-4638-8755-bd2b1b8762b9",
+  "rateLimit_after_msg3": {
+    "allowed": true,
+    "remaining": 2,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "afterReload_chatBMemoryStillVisible": false,
+  "afterReload_url": "https://thaura.ai/?chatId=54122710-974f-4638-8755-bd2b1b8762b9",
+  "endedAt": "2026-09-15T08:49:15.355Z"
+}

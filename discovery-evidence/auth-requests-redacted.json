@@ -13,7 +13,7 @@
   },
   {
     "method": "GET",
-    "url": "https://backend.thaura.ai/api/auth/email-exists?email=ferdoushasanferdous%40gmail.com",
+    "url": "https://backend.thaura.ai/api/auth/email-exists?email=<REDACTED_EMAIL>%40<REDACTED_DOMAIN>",
     "status": 200,
     "bodyRedacted": "{\"exists\":false}"
   },
@@ -27,13 +27,13 @@
     "method": "POST",
     "url": "https://backend.thaura.ai/api/auth/verify-otp",
     "status": 200,
-    "bodyRedacted": "{\"message\":\"OTP verified\",\"user\":{\"id\":\"cmu1145wi03oajyr4f0noby2n\",\"email\":\"ferdoushasanferdous@gmail.com\",\"plan\":\"Free Plan\",\"name\":\"Qa Test\",\"createdAt\":\"2026-09-14T09:17:00.258Z\",\"isAdmin\":false,\"cancelAtPeriodEnd\":false,\"currentPeriodEnd\":null,\"paymentProvider\":null}}"
+    "bodyRedacted": "{\"message\":\"OTP verified\",\"user\":{\"id\":\"cmu1145wi03oajyr4f0noby2n\",\"email\":\"<REDACTED_EMAIL>\",\"plan\":\"Free Plan\",\"name\":\"Qa Test\",\"createdAt\":\"2026-09-14T09:17:00.258Z\",\"isAdmin\":false,\"cancelAtPeriodEnd\":false,\"currentPeriodEnd\":null,\"paymentProvider\":null}}"
   },
   {
     "method": "GET",
     "url": "https://backend.thaura.ai/api/auth/me",
     "status": 200,
-    "bodyRedacted": "{\"user\":{\"id\":\"cmu1145wi03oajyr4f0noby2n\",\"email\":\"ferdoushasanferdous@gmail.com\",\"plan\":\"Free Plan\",\"name\":\"Qa Test\",\"createdAt\":\"2026-09-14T09:17:00.258Z\",\"isAdmin\":false,\"cancelAtPeriodEnd\":false,\"currentPeriodEnd\":null,\"paymentProvider\":null}}"
+    "bodyRedacted": "{\"user\":{\"id\":\"cmu1145wi03oajyr4f0noby2n\",\"email\":\"<REDACTED_EMAIL>\",\"plan\":\"Free Plan\",\"name\":\"Qa Test\",\"createdAt\":\"2026-09-14T09:17:00.258Z\",\"isAdmin\":false,\"cancelAtPeriodEnd\":false,\"currentPeriodEnd\":null,\"paymentProvider\":null}}"
   },
   {
     "method": "POST",
@@ -69,6 +69,6 @@
     "method": "GET",
     "url": "https://backend.thaura.ai/api/auth/me",
     "status": 200,
-    "bodyRedacted": "{\"user\":{\"id\":\"cmu1145wi03oajyr4f0noby2n\",\"email\":\"ferdoushasanferdous@gmail.com\",\"plan\":\"Free Plan\",\"name\":\"Qa Test\",\"createdAt\":\"2026-09-14T09:17:00.258Z\",\"isAdmin\":false,\"cancelAtPeriodEnd\":false,\"currentPeriodEnd\":null,\"paymentProvider\":null}}"
+    "bodyRedacted": "{\"user\":{\"id\":\"cmu1145wi03oajyr4f0noby2n\",\"email\":\"<REDACTED_EMAIL>\",\"plan\":\"Free Plan\",\"name\":\"Qa Test\",\"createdAt\":\"2026-09-14T09:17:00.258Z\",\"isAdmin\":false,\"cancelAtPeriodEnd\":false,\"currentPeriodEnd\":null,\"paymentProvider\":null}}"
   }
 ]
