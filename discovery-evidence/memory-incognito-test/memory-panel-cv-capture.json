@@ -1,0 +1,12 @@
+{
+  "note": "Follow-up to the earlier synthetic memory test (full-test-results.json), which found the automatic Memory subsystem empty after short 'please remember this fact' test messages. The tester separately shared their actual CV with Thaura in a genuine chat conversation (outside this session's automation), and the Memory panel subsequently populated with real content - confirming the automatic memory feature does work, just not on short synthetic commands.",
+  "checkedAt": "2026-09-16T06:34:52.000Z",
+  "endpoint": "GET https://backend.thaura.ai/api/memories",
+  "status": 200,
+  "body": {
+    "content": "## Overview\nYou are reviewing Ferdous Hasan's CV, a junior SQA engineer with about 1.7 years of experience in QA and AI application development.\n\n## Work\nYou are reviewing the CV of Ferdous Hasan, a junior SQA engineer with about 1.7 years of experience in QA and AI application development.",
+    "updatedAt": "2026-09-16T06:34:46.611Z",
+    "capacity": { "tokens": 68, "ceiling": 12000, "hardCap": 18000, "full": false }
+  },
+  "observation": "The two sections ('Overview' and 'Work') contain near-duplicate sentences, and both are phrased in second person imperative ('You are reviewing...') rather than as a third-person fact summary - suggesting the memory content is written as a standing instruction/context block to be injected back into the assistant's own context in future turns, not as a neutral note-to-self about the user."
+}

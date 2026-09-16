@@ -1,0 +1,70 @@
+{
+  "startedAt": "2026-09-16T07:37:42.492Z",
+  "sanityCheck_beforeConcurrency": {
+    "label": "sanity-single",
+    "status": 402,
+    "errorType": "insufficient_balance",
+    "tMs": 648
+  },
+  "concurrent_elapsedMs": 630,
+  "concurrent_results": [
+    {
+      "label": "conc-1",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 614
+    },
+    {
+      "label": "conc-2",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 629
+    },
+    {
+      "label": "conc-3",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 573
+    },
+    {
+      "label": "conc-4",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 624
+    },
+    {
+      "label": "conc-5",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 615
+    },
+    {
+      "label": "conc-6",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 593
+    },
+    {
+      "label": "conc-7",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 613
+    },
+    {
+      "label": "conc-8",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 600
+    },
+    {
+      "label": "conc-9",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 590
+    }
+  ],
+  "concurrent_statusCounts": {
+    "402": 9
+  },
+  "interpretation": "Per-minute window confirmed clear (sanity check returned 402, not 429) before the concurrency burst - any 429 among the 9 concurrent results is attributable to the concurrency limit specifically."
+}

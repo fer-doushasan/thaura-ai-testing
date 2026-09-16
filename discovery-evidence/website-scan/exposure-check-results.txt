@@ -1,0 +1,12 @@
+404  /.env
+404  /.git/config
+404  /wp-admin
+200  /admin
+401  /api/debug
+200  /api/health
+401  /api/status
+404  /.well-known/change-password
+404  /this-page-definitely-does-not-exist-qa-404-test
+404  /config.json
+404  /package.json
+404  /.git/HEAD

@@ -85,8 +85,8 @@ observations = [
      "discovery-evidence/memory-incognito-test/incognito-verified-results.json"],
     ["OBS-005", "Memory",
      "A verbal \"please remember this fact\" instruction is not persisted as durable memory across conversations; the assistant explicitly discloses this limitation in its reply.",
-     "The assistant does not falsely claim persistence - it states the limitation up front. A separate, genuine automatic memory subsystem exists (Account -> Memory, backed by GET /api/memories) but had not captured anything after our short synthetic test conversations.",
-     "discovery-evidence/memory-incognito-test/full-test-results.json, memory-settings-network-log.json"],
+     "The assistant does not falsely claim persistence - it states the limitation up front. A separate, genuine automatic memory subsystem exists (Account -> Memory, backed by GET /api/memories); it had not captured anything after our short synthetic test conversations, but was subsequently confirmed working (2026-09-16) when the tester shared a real CV in genuine usage - the store populated with substantive content, phrased oddly as a second-person instruction rather than a neutral summary.",
+     "discovery-evidence/memory-incognito-test/full-test-results.json, memory-settings-network-log.json, memory-panel-cv-capture.json"],
     ["OBS-006", "Reliability/Architecture",
      "Interrupting the client connection mid-stream (e.g., a page reload) does not cause the assistant's response to fail - the backend has a resumable-turn architecture (/v1/chat/active-turns) that completes generation server-side and lets the client resume and display the full answer after reconnecting.",
      "This is a positive architectural finding (resilience to dropped connections), included here for completeness rather than because it's a defect.",
@@ -97,8 +97,16 @@ observations = [
      "discovery-evidence/claims-check/home-text.txt, privacy-policy-text.txt, data-processing-addendum-text.txt"],
     ["OBS-008", "File Upload",
      "Images are not OCR'd or text-extracted at upload time; the upload API records only a generic \"Image file: <name>\" placeholder rather than any parsed content.",
-     "This describes the extraction pipeline's documented behavior, not a failure - whether the assistant can still read image-embedded text via multimodal vision at chat-turn time was not independently re-verified this session (see Not Tested).",
-     "discovery-evidence/upload-test/extraction-verification.json"],
+     "This describes the extraction pipeline's documented behavior, not a failure - re-verified 2026-09-16 that the assistant can still read image-embedded text via multimodal vision at chat-turn time (asked to quote text from sample.png, correctly replied with the exact baked-in marker QA-IMG-MARKER-30457), so end-user-visible functionality is unaffected.",
+     "discovery-evidence/upload-test/extraction-verification.json, image-ocr-verification.json"],
+    ["OBS-009", "Developer API",
+     "The documented 8-concurrent-requests-per-key rate limit did not trigger: 9 genuinely concurrent requests (fired via Promise.all, each in-flight ~570-630ms, confirmed non-overlapping with the separately-tested 60/min window) all returned 402 insufficient_balance, none returned 429. The documented 60-requests/minute limit, by contrast, was confirmed exactly - requests 1-60 reached the billing gate, 61-65 were correctly rejected with 429.",
+     "Not a security risk - a laxer-than-documented concurrency limit is permissive, not exploitable, and no abuse was demonstrated. This is a discrepancy between the published API contract at thaura.ai/api-platform and observed behavior, flagged for docs/product review rather than as a defect. Only 9 concurrent requests were tried once, to stay within a single safe probe rather than approaching anything resembling load-testing production.",
+     "discovery-evidence/api-test/rate-limit-test-results.json, concurrency-test-isolated-results.json"],
+    ["OBS-010", "Settings/Account UI",
+     "The Settings 'Name' field enforces a genuine maxlength=80 attribute (confirmed by direct attribute inspection), but an 80-character unbroken name overflows the \"Happy Wednesday, {name}\" greeting header and the sidebar profile label - neither has truncation/ellipsis handling for a name at that length.",
+     "Length validation itself works correctly (not a data-integrity issue); this is a display/layout polish gap for an edge case (a real name is unlikely to be 80 characters with no spaces). Blank-name submission is correctly blocked (Save button disabled), and a script/HTML injection payload in the same field was fully sanitized with no XSS - both PASS.",
+     "discovery-evidence/settings-negative-test/results.json, field-attributes-and-email-check.json, 02-long-name-after-save.png"],
 ]
 for row in observations:
     ws2.append(row)
@@ -152,12 +160,6 @@ not_tested = [
     ["Genuine assistant-side (generation) failure and its effect on quota", "Chat / Quota",
      "Could not be safely and deliberately reproduced without abusive techniques (e.g., adversarial prompts intended to crash the model, or resource-exhaustion attempts), which were explicitly out of scope. Two safe, realistic probes were run instead (simulated dropped connection; malformed request payload) but neither constitutes a genuine assistant-side failure - see gap analysis for full detail.",
      "discovery-evidence/quota-test/failed-response-quota-test.json, malformed-session-request-results.json"],
-    ["Image-embedded text readability by the assistant in a live chat turn", "File Upload",
-     "Deprioritized under a hard 5-message/5-hour free-tier budget in favor of higher-value memory/incognito/file-isolation tests. The upload-time extraction pipeline behavior (no OCR, opaque \"Image file\" placeholder) is documented, but whether the model can still read image text via multimodal vision when asked directly was not independently re-confirmed this session.",
-     "discovery-evidence/upload-test/extraction-verification.json"],
-    ["Cross-account file isolation (two distinct real accounts)", "File Upload / Isolation",
-     "Assessment scope explicitly excludes using another real person's account. Same-account cross-conversation isolation and direct-file-ID access (401/404) were tested instead as the closest safe proxy.",
-     "discovery-evidence/upload-test/isolation-probe-results.json, memory-incognito-test/full-test-results.json"],
     ["API: temperature boundary enforcement", "API",
      "Billing-gated - the zero-balance account receives 402 insufficient_balance before any temperature validation/execution logic can run. Funding was evaluated and not recommended (see API Funding Decision).",
      "discovery-evidence/api-test/validation-batch-results.json (API-10 to API-13)"],
@@ -200,7 +202,7 @@ ws0 = wb.create_sheet("Summary", 0)
 ws0["A1"] = "Thaura AI — SQA Assessment Bug & Findings Report"
 ws0["A1"].font = Font(size=14, bold=True)
 ws0["A3"] = "Generated"
-ws0["B3"] = "2026-09-15"
+ws0["B3"] = "2026-09-16"
 ws0["A4"] = "Application"
 ws0["B4"] = "Thaura AI (https://thaura.ai)"
 ws0["A5"] = "Tester"

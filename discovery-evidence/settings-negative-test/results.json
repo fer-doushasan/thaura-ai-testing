@@ -1,0 +1,22 @@
+{
+  "startedAt": "2026-09-16T08:22:21.463Z",
+  "nameField_found": true,
+  "emailField_found": true,
+  "baseline_nameValue": "Qa Test",
+  "emailField_editable": true,
+  "blankName_saveOutcome": {
+    "saveAttempted": false,
+    "saveButtonDisabled": true
+  },
+  "longName_mainPageTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nReview CV\nExtract text from image\nQA window-type-experiment anchor\nQA quota-sharing test\nTCP vs UDP differences\nQA memory and file access check\nQA memory marker and document verification\nYESTERDAY\nQA quota test\nA\nAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHey there, Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "longName_lengthPersistedOnReopen": 80,
+  "longName_note": "Confirmed via field-attributes-and-email-check.json that the Name input has an explicit maxlength=80 HTML attribute - the 80-char readback is genuine, deliberate length enforcement, not an absence of a limit. The 2000-char fill attempt was silently capped to 80 characters by the browser respecting maxlength during input. Remaining finding: at 80 unbroken characters, the greeting header has no truncation/ellipsis handling and overflows - a minor display/UX issue, not a data-integrity or validation bug.",
+  "xssPayload_dialogFired": null,
+  "xssPayload_windowFlagSet": false,
+  "xssPayload_greetingHtmlSnippet": "<h1 dir=\"ltr\" class=\"relative z-20 max-w-5xl text-primary drop-shadow-sm text-center px-4 text-greeting\">Happy Wednesday, Scriptwindowxssfiredtruescriptimg Srcx Onerrorwindowxssfiredtr</h1>",
+  "xssPayload_bodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nReview CV\nExtract text from image\nQA window-type-experiment anchor\nQA quota-sharing test\nTCP vs UDP differences\nQA memory and file access check\nQA memory marker and document verification\nYESTERDAY\nQA quota test\nSS\nScriptwindowxssfiredtruescriptimg Srcx Onerrorwindowxssfiredtr\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nHappy Wednesday, Scriptwindowxssfiredtruescriptimg Srcx Onerrorwindowxssfiredtr\n\nHow can I help y",
+  "xssPayload_dialogFiredAfterReload": null,
+  "xssPayload_windowFlagSetAfterReload": false,
+  "finalRestoredValue": "Qa Test",
+  "endedAt": "2026-09-16T08:22:56.430Z"
+}

@@ -1,0 +1,32 @@
+{
+  "startedAt": "2026-09-16T04:49:36.740Z",
+  "storedCookie_claims": {
+    "exp": 1820914854,
+    "expReadableUTC": "2027-09-14T09:40:54.000Z"
+  },
+  "storedCookie_expiresAttr": 1820914854.916378,
+  "storedCookie_expiresAttrReadable": "2027-09-14T09:40:54.916Z",
+  "liveAuthMe_status": 200,
+  "liveAuthMe_setCookieHeaderPresent": false,
+  "liveAuthMe_bodyFieldsPresent": [
+    "id",
+    "email",
+    "plan",
+    "name",
+    "createdAt",
+    "isAdmin",
+    "cancelAtPeriodEnd",
+    "currentPeriodEnd",
+    "paymentProvider"
+  ],
+  "cookieAfterLiveRequest_sameValueAsStored": true,
+  "cookieAfterLiveRequest_claims": {
+    "exp": 1820914854,
+    "expReadableUTC": "2027-09-14T09:40:54.000Z"
+  },
+  "accountMenu_fullText": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nTCP vs UDP differences\nQA memory and file access check\nQA memory marker and document verification\nYESTERDAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nFresh start, Qa Test\n\nHow can I help you today?\n\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nQT\nQa Test\nFree Plan\nLearn More\nSettings\nTheme\nLanguage\nMemory\nAPI\nLogout\nUpgrade Plan",
+  "accountMenu_hasSessionsOrDevicesEntry": false,
+  "settingsModal_fullText": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nTCP vs UDP differences\nQA memory and file access check\nQA memory marker and document verification\nYESTERDAY\nQA quota test\nQT\nQa Test\nFree Plan\nIncognito mode\nFree Plan -\nUpgrade\nFresh start, Qa Test\n\nHow can I help you today?\n\nThaura's choice\nWrite\nBuild\nLearn\nSummarize\nSettings\nQT\nAdd a photo\nName\nEmail\nSave Profile\nSubscription\nUpgrade Plan\nEmail Notifications\nMarketing Emails\n\nReceive updates about new features and promotions\n\nDanger Zone\nDelete account\nClose",
+  "settingsModal_hasSessionsOrDevicesEntry": false,
+  "endedAt": "2026-09-16T04:49:45.172Z"
+}

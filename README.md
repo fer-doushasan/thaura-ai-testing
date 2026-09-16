@@ -14,7 +14,7 @@ Explicitly out of scope: use of another real person's account, abusive/load-test
 ## Test Environment
 
 - **Application:** https://thaura.ai (frontend), https://backend.thaura.ai (API)
-- **Test account:** a single dedicated QA account ("Qa Test", Free Plan) created for this assessment — not a real third-party account.
+- **Test account:** a primary dedicated QA account ("Qa Test", Free Plan) created for this assessment, plus a second account under the same tester's own control (used only for the cross-account file-isolation test) — neither is a real third-party account.
 - **Automation:** Playwright (Chromium, headless) + Node.js.
 - **Auxiliary tools:** Google Lighthouse (performance/SEO/accessibility/best practices), Apache JMeter (conservative load baseline), Python 3 with `openpyxl` (Excel report generation) and `Pillow` (evidence image redaction).
 
@@ -94,4 +94,4 @@ Do not increase concurrency/duration against the production target without expli
 
 ## Known Limitations
 
-See `docs/task-01-gap-analysis.md` §Summary and `reports/thaura-bug-report.xlsx` (Not Tested / Limitations sheet) for the authoritative list. In short: a genuine assistant-side generation failure could not be safely reproduced; image-embedded-text reading by the assistant in a live chat turn wasn't re-verified under the free-tier budget; cross-*account* file isolation wasn't tested (by design — no second real account was used); and a defined set of deeper API parameter/behavioral tests remain billing-gated, with funding evaluated and explicitly not recommended given cost-to-value.
+See `docs/task-01-gap-analysis.md` §Summary and `reports/thaura-bug-report.xlsx` (Not Tested / Limitations sheet) for the authoritative list. In short: a genuine assistant-side generation failure could not be safely reproduced; and a defined set of deeper API parameter/behavioral tests remain billing-gated, with funding evaluated and explicitly not recommended given cost-to-value. (Image-embedded-text reading by the assistant in a live chat turn, and cross-account file isolation using a second account under the tester's own control, were both re-tested on 2026-09-16 and now have a PASS.)

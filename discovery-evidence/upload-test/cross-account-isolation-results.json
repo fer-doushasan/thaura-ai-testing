@@ -1,0 +1,94 @@
+{
+  "startedAt": "2026-09-16T06:51:55.552Z",
+  "accountB_meCheck": {
+    "status": 200
+  },
+  "accountA_userId_forComparison": "cmu1145wi03oajyr4f0noby2n",
+  "isolationProbes": [
+    {
+      "label": "valid_pdf",
+      "fileId": "4c313b0a6445c6a8a1d2d5732099b68b",
+      "url": "https://backend.thaura.ai/api/files/4c313b0a6445c6a8a1d2d5732099b68b",
+      "status": 404,
+      "bodySnippet": "{\"error\":{\"type\":\"not_found_error\",\"message\":\"File not found\"}}"
+    },
+    {
+      "label": "valid_pdf",
+      "fileId": "4c313b0a6445c6a8a1d2d5732099b68b",
+      "url": "https://backend.thaura.ai/api/uploads/4c313b0a6445c6a8a1d2d5732099b68b",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/uploads/4c313b0a6445c6a8a1d2d5732099b68b</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_pdf",
+      "fileId": "4c313b0a6445c6a8a1d2d5732099b68b",
+      "url": "https://backend.thaura.ai/api/user/files/4c313b0a6445c6a8a1d2d5732099b68b",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/user/files/4c313b0a6445c6a8a1d2d5732099b68b</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_xlsx",
+      "fileId": "fc14a17ca3c75ba979118ca212e74d0e",
+      "url": "https://backend.thaura.ai/api/files/fc14a17ca3c75ba979118ca212e74d0e",
+      "status": 404,
+      "bodySnippet": "{\"error\":{\"type\":\"not_found_error\",\"message\":\"File not found\"}}"
+    },
+    {
+      "label": "valid_xlsx",
+      "fileId": "fc14a17ca3c75ba979118ca212e74d0e",
+      "url": "https://backend.thaura.ai/api/uploads/fc14a17ca3c75ba979118ca212e74d0e",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/uploads/fc14a17ca3c75ba979118ca212e74d0e</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_xlsx",
+      "fileId": "fc14a17ca3c75ba979118ca212e74d0e",
+      "url": "https://backend.thaura.ai/api/user/files/fc14a17ca3c75ba979118ca212e74d0e",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/user/files/fc14a17ca3c75ba979118ca212e74d0e</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_png_earlier",
+      "fileId": "4011aeb5b53bb2930c0da507343d7eb6",
+      "url": "https://backend.thaura.ai/api/files/4011aeb5b53bb2930c0da507343d7eb6",
+      "status": 404,
+      "bodySnippet": "{\"error\":{\"type\":\"not_found_error\",\"message\":\"File not found\"}}"
+    },
+    {
+      "label": "valid_png_earlier",
+      "fileId": "4011aeb5b53bb2930c0da507343d7eb6",
+      "url": "https://backend.thaura.ai/api/uploads/4011aeb5b53bb2930c0da507343d7eb6",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/uploads/4011aeb5b53bb2930c0da507343d7eb6</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_png_earlier",
+      "fileId": "4011aeb5b53bb2930c0da507343d7eb6",
+      "url": "https://backend.thaura.ai/api/user/files/4011aeb5b53bb2930c0da507343d7eb6",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/user/files/4011aeb5b53bb2930c0da507343d7eb6</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_png_ocr_test",
+      "fileId": "c8e1fe02a7224da9020d0a44c2d9fafc",
+      "url": "https://backend.thaura.ai/api/files/c8e1fe02a7224da9020d0a44c2d9fafc",
+      "status": 404,
+      "bodySnippet": "{\"error\":{\"type\":\"not_found_error\",\"message\":\"File not found\"}}"
+    },
+    {
+      "label": "valid_png_ocr_test",
+      "fileId": "c8e1fe02a7224da9020d0a44c2d9fafc",
+      "url": "https://backend.thaura.ai/api/uploads/c8e1fe02a7224da9020d0a44c2d9fafc",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/uploads/c8e1fe02a7224da9020d0a44c2d9fafc</pre>\n</body>\n</html>\n"
+    },
+    {
+      "label": "valid_png_ocr_test",
+      "fileId": "c8e1fe02a7224da9020d0a44c2d9fafc",
+      "url": "https://backend.thaura.ai/api/user/files/c8e1fe02a7224da9020d0a44c2d9fafc",
+      "status": 404,
+      "bodySnippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/user/files/c8e1fe02a7224da9020d0a44c2d9fafc</pre>\n</body>\n</html>\n"
+    }
+  ],
+  "endedAt": "2026-09-16T06:51:57.881Z"
+}

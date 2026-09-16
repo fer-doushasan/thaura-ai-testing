@@ -1,9 +1,10 @@
 {
   "testName": "Conservative Baseline Load Test",
-  "note": "This is a light baseline check, NOT a production-capacity or stress test.",
-  "executedAtUTC": "2026-09-14T10:49:38Z",
+  "note": "This is a light baseline check, NOT a production-capacity or stress test. This run supersedes the earlier 3-page run - it adds /api-platform to close the coverage gap (Task 02, item 2.2) identified during the Task 02 gap analysis.",
+  "executedAtUTC": "2026-09-16",
+  "runMethod": "JMeter GUI (Summary Report listener), run directly by the user - not the CLI -l results.jtl capture used for the original 3-page run",
   "parameters": {
-    "targets": ["GET /home", "GET /pricing", "GET /faq"],
+    "targets": ["GET /home", "GET /pricing", "GET /faq", "GET /api-platform"],
     "concurrentUsers": 5,
     "rampUpSeconds": 30,
     "loopsPerUser": 3,
@@ -11,21 +12,25 @@
     "scope": "Public static pages only - no backend.thaura.ai, no /v1/chat/completions, no authenticated or billing endpoints"
   },
   "overall": {
-    "totalRequests": 45,
+    "totalRequests": 60,
     "errors": 0,
     "errorRatePercent": 0.0,
-    "testDurationSeconds": 63.0,
-    "throughputReqPerSec": 0.714,
-    "avgResponseTimeMs": 1035.7,
-    "medianResponseTimeMs": 1051,
-    "p95ResponseTimeMs": 1191.6,
-    "minResponseTimeMs": 803,
-    "maxResponseTimeMs": 1253
+    "throughputPerMin": 46.9,
+    "throughputReqPerSec": 0.782,
+    "avgResponseTimeMs": 1053,
+    "minResponseTimeMs": 904,
+    "maxResponseTimeMs": 1333,
+    "stdDevMs": 107.48,
+    "receivedKBPerSec": 73.29,
+    "sentKBPerSec": 0.09,
+    "avgBytes": 95926.8
   },
   "byEndpoint": {
-    "GET /home":    { "n": 15, "avgMs": 1113.7, "medianMs": 1127, "p95Ms": 1228.5, "minMs": 988, "maxMs": 1253 },
-    "GET /pricing": { "n": 15, "avgMs": 899.3,  "medianMs": 912,  "p95Ms": 974.8,  "minMs": 803, "maxMs": 979  },
-    "GET /faq":     { "n": 15, "avgMs": 1093.9, "medianMs": 1104, "p95Ms": 1170.4, "minMs": 986, "maxMs": 1176 }
+    "GET /home":         { "n": 15, "avgMs": 1145, "minMs": 1090, "maxMs": 1333, "stdDevMs": 60.62, "errorPercent": 0.0, "throughputPerMin": 14.7, "receivedKBPerSec": 25.95, "avgBytes": 108610.7 },
+    "GET /pricing":      { "n": 15, "avgMs": 945,  "minMs": 904,  "maxMs": 993,  "stdDevMs": 24.46, "errorPercent": 0.0, "throughputPerMin": 14.2, "receivedKBPerSec": 15.97, "avgBytes": 68876.0 },
+    "GET /faq":          { "n": 15, "avgMs": 1155, "minMs": 1092, "maxMs": 1227, "stdDevMs": 42.98, "errorPercent": 0.0, "throughputPerMin": 14.4, "receivedKBPerSec": 29.34, "avgBytes": 125537.0 },
+    "GET /api-platform": { "n": 15, "avgMs": 965,  "minMs": 909,  "maxMs": 1076, "stdDevMs": 42.37, "errorPercent": 0.0, "throughputPerMin": 14.2, "receivedKBPerSec": 18.62, "avgBytes": 80684.0 }
   },
-  "rawResultsFile": "results.jtl"
+  "note_missingPercentiles": "median/p95 are not available for this run - the Summary Report listener's 'Write results to file' field was left blank, so no raw .jtl was captured this time, only the aggregate table. Only avg/min/max/error-rate/throughput/bytes are reported, matching exactly what was captured; nothing was estimated or invented.",
+  "rawResultsFile": "none captured for this run (see note_missingPercentiles); prior run's results.jtl (3-page only) is superseded"
 }

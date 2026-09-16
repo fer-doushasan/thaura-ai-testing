@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-16T12:06:30.695Z",
+  "checkAfterUTC": "2026-09-16T11:19:41.335Z",
+  "anchorMessageSentAt": "2026-09-16T06:14:41.335Z",
+  "quotaBefore": {
+    "allowed": true,
+    "remaining": 4,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "quotaAfterAnchor": {
+    "allowed": true,
+    "remaining": 3,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "quotaNow": {
+    "allowed": true,
+    "remaining": 5,
+    "resetAt": null,
+    "plan": "Free Plan"
+  }
+}

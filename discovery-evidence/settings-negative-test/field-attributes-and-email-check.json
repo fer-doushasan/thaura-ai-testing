@@ -1,0 +1,14 @@
+{
+  "note": "Follow-up to results.json. Corrects an initial misreading: the 'long name' case's persisted-length-of-80-on-reopen is explained by a genuine maxlength=80 HTML attribute on the Name field (confirmed directly), not an absence of length validation. Also tests Email field format validation without ever clicking Save, to avoid risking a real change to the OTP-login email on the primary QA account.",
+  "checkedAt": "2026-09-16T08:30:00.000Z",
+  "nameField_maxlengthAttribute": "80",
+  "emailField_maxlengthAttribute": null,
+  "emailField_type": "email",
+  "emailField_editable": true,
+  "invalidEmailFormatEntered": "not-an-email-format",
+  "saveButtonDisabledAfterInvalidEmail": false,
+  "saveButtonWasNotClicked": true,
+  "reasonNotClicked": "Thaura is OTP-only (passwordless); the account's email is its login identity. Deliberately did not submit an invalid/unverified email change to avoid risking permanent lockout of the primary QA test account. Server-side handling of an invalid or unverified email change on actual submit was therefore not exercised.",
+  "emailValueAfterReloadWithoutSaving": null,
+  "conclusion": "The Save Profile button does not appear to be gated by client-side email format validation (it stayed enabled with an obviously invalid value in the field), unlike the Name field which correctly disables Save when blank. Whether an invalid email would actually be accepted, rejected, or require re-verification on the server if submitted was not tested, by deliberate choice, due to account-safety risk."
+}

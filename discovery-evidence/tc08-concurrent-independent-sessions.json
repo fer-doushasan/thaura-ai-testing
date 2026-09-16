@@ -1,0 +1,15 @@
+{
+  "tokensAreDifferentValues": true,
+  "tokenA_claims": {
+    "exp": 1820914854,
+    "expReadableUTC": "2027-09-14T09:40:54.000Z"
+  },
+  "tokenB_claims": {
+    "exp": 1821073780,
+    "expReadableUTC": "2027-09-16T05:49:40.000Z"
+  },
+  "meA_status": 200,
+  "meB_status": 200,
+  "bothValidSimultaneously": true,
+  "at": "2026-09-16T05:50:05.060Z"
+}

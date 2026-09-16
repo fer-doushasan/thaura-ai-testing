@@ -1,0 +1,14 @@
+{
+  "purpose": "Determine whether the 5-message free-tier quota is tracked per-account (shared) or per-token/session (bypassable via multiple independent logins).",
+  "step1_baseline": {
+    "tokenA_quota": {"allowed": true, "remaining": 5, "resetAt": null, "plan": "Free Plan"},
+    "tokenB_quota": {"allowed": true, "remaining": 5, "resetAt": null, "plan": "Free Plan"},
+    "note": "Both fresh at 5/5 - inconclusive alone, both would show 5 whether shared or separate."
+  },
+  "step2_after_sending_1_message_via_token_B_only": {
+    "tokenA_quota": {"allowed": true, "remaining": 4, "resetAt": null, "plan": "Free Plan"},
+    "tokenB_quota": {"allowed": true, "remaining": 4, "resetAt": null, "plan": "Free Plan"},
+    "conclusion": "Token A's remaining also dropped to 4 despite the message being sent via Token B only. Quota is enforced at the ACCOUNT level, not per-token. No bypass via multiple independent login sessions."
+  },
+  "at": "2026-09-16"
+}

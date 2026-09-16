@@ -1,0 +1,73 @@
+[
+  {
+    "id": "API-22-missing-auth-header",
+    "status": 401,
+    "response": {
+      "error": {
+        "message": "Authentication required. Provide a valid API key (Authorization: Bearer YOUR_API_KEY) or a session token.",
+        "type": "authentication_error",
+        "code": "unauthorized"
+      },
+      "message": "Authentication required"
+    }
+  },
+  {
+    "id": "API-23-malformed-auth-header-no-bearer",
+    "status": 401,
+    "response": {
+      "error": {
+        "message": "Authentication required. Provide a valid API key (Authorization: Bearer YOUR_API_KEY) or a session token.",
+        "type": "authentication_error",
+        "code": "unauthorized"
+      },
+      "message": "Authentication required"
+    }
+  },
+  {
+    "id": "API-24-malformed-auth-header-empty-bearer",
+    "status": 401,
+    "response": {
+      "error": {
+        "message": "Authentication required. Provide a valid API key (Authorization: Bearer YOUR_API_KEY) or a session token.",
+        "type": "authentication_error",
+        "code": "unauthorized"
+      },
+      "message": "Authentication required"
+    }
+  },
+  {
+    "id": "API-25-invalid-key-wrong-format",
+    "status": 401,
+    "response": {
+      "error": {
+        "message": "Authentication required. Provide a valid API key (Authorization: Bearer YOUR_API_KEY) or a session token.",
+        "type": "authentication_error",
+        "code": "unauthorized"
+      },
+      "message": "Authentication required"
+    }
+  },
+  {
+    "id": "API-26-invalid-key-tampered-real-looking",
+    "status": 401,
+    "response": {
+      "error": {
+        "message": "Authentication required. Provide a valid API key (Authorization: Bearer YOUR_API_KEY) or a session token.",
+        "type": "authentication_error",
+        "code": "unauthorized"
+      },
+      "message": "Authentication required"
+    }
+  },
+  {
+    "id": "API-27-valid-zero-balance-key-for-comparison",
+    "status": 402,
+    "response": {
+      "error": {
+        "type": "insufficient_balance",
+        "message": "Insufficient API balance. Minimum required: $0.10. Please add funds to your account.",
+        "code": "insufficient_balance"
+      }
+    }
+  }
+]

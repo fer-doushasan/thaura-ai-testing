@@ -1,0 +1,31 @@
+{
+  "startedAt": "2026-09-16T06:25:54.553Z",
+  "imgMarkerExpected": "QA-IMG-MARKER-30457",
+  "rateLimit_before": {
+    "allowed": true,
+    "remaining": 3,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "finalBodyTextSnippet": "Thaura\nBeta\nToggle Sidebar\nNew Chat\n⌘+J\nSearch\n⌘+K\nProjects\nArtifacts\nWork\nTODAY\nExtract text from image\nQA window-type-experiment anchor\nQA quota-sharing test\nTCP vs UDP differences\nQA memory and file access check\nQA memory marker and document verification\nYESTERDAY\nQA quota test\nQT\nQa Test\nFree Plan\nWhat text is written in this image? Quote it exactly, character for character.\n12:26 PM\n\nThe text in the image reads:\n\nMarker: QA-IMG-MARKER-30457\n\n~6.1g CO₂ saved\nFeedback\n\nReply to Thaura...\n\nEvery answer is guided by the Thaura Constitution",
+  "uploadNetworkResponses": [
+    {
+      "fileName": "sample.png",
+      "content": "Image file: sample.png",
+      "fileId": "c8e1fe02a7224da9020d0a44c2d9fafc",
+      "minioKey": "users/cmu1145wi03oajyr4f0noby2n/1789539962946_bf10e98b82ff4ceeac76d059d705832f.png",
+      "mimeType": "image/png",
+      "size": 3848,
+      "saved": true
+    }
+  ],
+  "markerFoundInReply": true,
+  "chatUrl": "https://thaura.ai/?chatId=e1601d33-eade-4841-8764-cacd7f0c75f6",
+  "rateLimit_after": {
+    "allowed": true,
+    "remaining": 2,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "endedAt": "2026-09-16T06:26:16.097Z"
+}

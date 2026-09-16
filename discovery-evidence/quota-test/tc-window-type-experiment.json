@@ -1,0 +1,18 @@
+{
+  "experiment": "TC-quota-window-type (fixed vs rolling)",
+  "anchorMessageSentAt": "2026-09-16T06:14:41.335Z",
+  "quotaBefore": {
+    "allowed": true,
+    "remaining": 4,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "quotaAfter": {
+    "allowed": true,
+    "remaining": 3,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "checkAfterUTC": "2026-09-16T11:19:41.335Z",
+  "instructions": "At checkAfterUTC or later, call GET /api/chats/rate-limit/check with the same session. If remaining returns to 5 (or resetAt clears having been null all along), that indicates a FIXED batch window anchored to this single message. If remaining only shows partial/no change consistent with a per-message timer, that indicates a ROLLING window."
+}

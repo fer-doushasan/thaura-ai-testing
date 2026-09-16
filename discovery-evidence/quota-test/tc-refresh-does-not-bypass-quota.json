@@ -1,0 +1,16 @@
+{
+  "before": {
+    "allowed": true,
+    "remaining": 4,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "after": {
+    "allowed": true,
+    "remaining": 4,
+    "resetAt": null,
+    "plan": "Free Plan"
+  },
+  "unchanged": true,
+  "at": "2026-09-16T06:08:27.719Z"
+}

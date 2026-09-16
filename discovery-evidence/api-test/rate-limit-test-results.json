@@ -1,0 +1,462 @@
+{
+  "startedAt": "2026-09-16T07:35:17.223Z",
+  "sequential_elapsedMs": 14177,
+  "sequential_results": [
+    {
+      "label": "seq-1",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 708
+    },
+    {
+      "label": "seq-2",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 587
+    },
+    {
+      "label": "seq-3",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 217
+    },
+    {
+      "label": "seq-4",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 209
+    },
+    {
+      "label": "seq-5",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-6",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-7",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 207
+    },
+    {
+      "label": "seq-8",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-9",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 207
+    },
+    {
+      "label": "seq-10",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 198
+    },
+    {
+      "label": "seq-11",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-12",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-13",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 243
+    },
+    {
+      "label": "seq-14",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-15",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-16",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-17",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-18",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 200
+    },
+    {
+      "label": "seq-19",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-20",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 200
+    },
+    {
+      "label": "seq-21",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 205
+    },
+    {
+      "label": "seq-22",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 243
+    },
+    {
+      "label": "seq-23",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 206
+    },
+    {
+      "label": "seq-24",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 199
+    },
+    {
+      "label": "seq-25",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 207
+    },
+    {
+      "label": "seq-26",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 201
+    },
+    {
+      "label": "seq-27",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-28",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 200
+    },
+    {
+      "label": "seq-29",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-30",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-31",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 205
+    },
+    {
+      "label": "seq-32",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-33",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 207
+    },
+    {
+      "label": "seq-34",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 200
+    },
+    {
+      "label": "seq-35",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 205
+    },
+    {
+      "label": "seq-36",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 199
+    },
+    {
+      "label": "seq-37",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-38",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 201
+    },
+    {
+      "label": "seq-39",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-40",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 199
+    },
+    {
+      "label": "seq-41",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-42",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 198
+    },
+    {
+      "label": "seq-43",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-44",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 201
+    },
+    {
+      "label": "seq-45",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-46",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 201
+    },
+    {
+      "label": "seq-47",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-48",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 212
+    },
+    {
+      "label": "seq-49",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 205
+    },
+    {
+      "label": "seq-50",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 201
+    },
+    {
+      "label": "seq-51",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 206
+    },
+    {
+      "label": "seq-52",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 201
+    },
+    {
+      "label": "seq-53",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 204
+    },
+    {
+      "label": "seq-54",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 200
+    },
+    {
+      "label": "seq-55",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-56",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 211
+    },
+    {
+      "label": "seq-57",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 206
+    },
+    {
+      "label": "seq-58",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 202
+    },
+    {
+      "label": "seq-59",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 205
+    },
+    {
+      "label": "seq-60",
+      "status": 402,
+      "errorType": "insufficient_balance",
+      "tMs": 203
+    },
+    {
+      "label": "seq-61",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 197
+    },
+    {
+      "label": "seq-62",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 198
+    },
+    {
+      "label": "seq-63",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 199
+    },
+    {
+      "label": "seq-64",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 196
+    },
+    {
+      "label": "seq-65",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 198
+    }
+  ],
+  "sequential_statusCounts": {
+    "402": 60,
+    "429": 5
+  },
+  "sequential_first429Index": 61,
+  "concurrent_elapsedMs": 621,
+  "concurrent_results": [
+    {
+      "label": "conc-1",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 208
+    },
+    {
+      "label": "conc-2",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 208
+    },
+    {
+      "label": "conc-3",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 591
+    },
+    {
+      "label": "conc-4",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 600
+    },
+    {
+      "label": "conc-5",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 586
+    },
+    {
+      "label": "conc-6",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 580
+    },
+    {
+      "label": "conc-7",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 585
+    },
+    {
+      "label": "conc-8",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 567
+    },
+    {
+      "label": "conc-9",
+      "status": 429,
+      "errorType": "rate_limit_error",
+      "tMs": 618
+    }
+  ],
+  "concurrent_statusCounts": {
+    "429": 9
+  },
+  "endedAt": "2026-09-16T07:35:34.029Z"
+}
